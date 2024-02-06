@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/src/input.css">
     <link rel="stylesheet" href="./output.css">
     <title>Agility Creative Solution App</title>
 </head>
 <body>
     <div class=" bg-generic-dark-1 w-full h-full flex flex-col items-center">
         <!-- HEADER -->
-        <div class="flex top-0 justify-around p-4 h-26 items-center w-full mb-4">
+        <div class="flex fixed bg-generic-dark-1 top-0 justify-between py-6 px-8 h-26 items-center w-full">
             <div class="flex gap-4 items-center text-white">
                 <img width="36px" height="28px" src="./assets/images/logo.svg" />
                 <span class="text-white font-medium">AGILITY</span>
             </div> 
-            <div class="flex gap-3 items-center">
+            <div class="flex gap-10 items-center">
                 <a href="">Home</a>
                 <a href="">About us</a>
                 <a href="">Services</a>
@@ -25,47 +26,64 @@
             </div>
         </div>
         <!-- HOME -->
-        <div class=" w-full min-h-[100vh] flex justify-around">
+        <div class=" w-full min-h-[100vh] flex flex-wrap justify-evenly items-center">
             <div>
-                <h1 class="text-6xl text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
-                <div class="flex gap-3">
-                    <p>transforme sua presença digital de forma</p>
-                <span class="flex flex-col text-primary">
+                <h1 class="text-5xl font-bold text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
+                <div class="flex gap-3 relative w-full">
+                    <p class="pl-1 font-medium text-xl">transforme sua presença digital de forma</p>
+                <span class="flex flex-col text-xl text-primary absolute right-[-10px]">
                     <p>criativa</p>
                     <p>rápida</p>
                     <p>inteligente</p>
                     <p>fácil</p>
                 </span>
                 </div>
-                <div> <button class="hover:bg-primary bg-primary rounded-full px-6 py-3">saiba mais</button> <button class="hover:bg-primary rounded-full px-6 py-3">nossos trabalhos</button></div>
+                <div class="relative flex items-center mt-8 gap-6">
+                    <button class="z-10 bg-primary px-8 py-1.5 rounded-full">saiba mais </button>
+                    <button class="z-10">nossos trabalhos</button>
+                    <!-- <span class="bg-primary px-6 py-3 left-0 absolute rounded-full w-4 z-0"></span> -->
+                </div>
+                
             </div>
-            <div class="bg-generic-dark-2 rounded-full w-[420px] h-[600px] justify-center items-center">
+            <div class="bg-generic-dark-2 rounded-[105px] w-[420px] h-[600px] flex justify-center items-center">
                 IMG HOLDING PHONE W/ PORTFOLIO SCREEN
             </div>
         </div>
         <!-- ABOUT US -->
-        <div>
-            <div class="bg-generic-dark-2 rounded-full w-[560px] h-[560px]">IMG</div>
-            <div class="flex flex-col">
-                <span class="p-2 text-white bg-primary-dark text-gray-300">conheça a gente</span>
-                <h2>acreditamos em <br>
-                colaboração & criatividade
+        <div class="flex flex-wrap w-full items-center justify-evenly gap-12 min-h-[100vh]">
+            <div class="bg-generic-dark-2 rounded-full min-w-[560px] h-[560px] flex justify-center items-center">IMG
+
+            </div>
+            <div class="flex flex-col max-w-xl">
+                <span class="rounded-3xl mb-10 py-1.5 px-2 bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
+                    conheça a gente
+                </span>
+                <h2 class="text-4xl mb-8">acreditamos em <br>
+                <strong>colaboração & criatividade</strong>
                 </h2>
                 <p>desde o início, a <strong class="text-primary">agility creativa</strong> tem sido apaixonada por transformar visões em experiências digitais excepcionais. Nossa missão é proporcionar soluções digitais inovadoras que impulsionem o sucesso dos nossos clientes.
                 </p>
-                <ol>
-                    <ul>
-                        <li>transparência</li>
-                        <li>honestidade</li>
-                    </ul>
-                    <ul>
-                        <li>otimismo</li>
-                        <li>respeito</li>
-                    </ul>
-                </ol>
-                <div>
-                    <button>quero começar um projeto!</button>
-                    <button>nossos trabalhos</button>
+                <div class="grid grid-cols-2 font-semibold my-10 gap-8">
+                    <div class="grid-cols-1 flex items-center gap-4">
+                        <span class="bg-primary rounded-full w-5 h-5"></span>
+                        transparência
+                    </div>
+                    <div class="grid-cols-1 flex items-center gap-4">
+                        <span class="bg-primary rounded-full w-5 h-5"></span>
+                        honestidade
+                    </div>
+                    <div class="grid-cols-2 flex items-center gap-4">
+                        <span class="bg-primary rounded-full w-5 h-5"></span>
+                        otimismo
+                    </div>
+                    <div class="grid-cols-2 flex items-center gap-4">
+                        <span class="bg-primary rounded-full w-5 h-5"></span>
+                        respeito
+                    </div>
+                </div>           
+                <div class="flex items-center gap-10">
+                    <button class="z-10 bg-primary px-8 py-2 rounded-full">quero começar um projeto!</button>
+                    <button class="text-primary">nossos trabalhos</button>
                 </div>
             </div>
         </div>
