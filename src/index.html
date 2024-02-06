@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="./output.css">
     <title>Agility Creative Solution App</title>
 </head>
-<body class="bg-generic-dark-1 w-full flex flex-col items-center">
+<body>
+    <div class=" bg-generic-dark-1 w-full h-full flex flex-col items-center">
         <!-- HEADER -->
-        <div class="flex fixed top-0 justify-around p-4 h-26 items-center w-full">
-            <img src="./assets/images/logo.svg" />
+        <div class="flex top-0 justify-around p-4 h-26 items-center w-full mb-4">
+            <div class="flex gap-4 items-center text-white">
+                <img width="36px" height="28px" src="./assets/images/logo.svg" />
+                <span class="text-white font-medium">AGILITY</span>
+            </div> 
             <div class="flex gap-3 items-center">
                 <a href="">Home</a>
                 <a href="">About us</a>
@@ -21,17 +25,19 @@
             </div>
         </div>
         <!-- HOME -->
-        <div class="w-full h-[100vh] flex justify-around">
+        <div class=" w-full min-h-[100vh] flex justify-around">
             <div>
-                <h1>NÓS SOMOS AGILITY</h1>
-                <p>transforme sua presença digital de forma</p>
-                <span class="flex flex-col">
+                <h1 class="text-6xl text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
+                <div class="flex gap-3">
+                    <p>transforme sua presença digital de forma</p>
+                <span class="flex flex-col text-primary">
                     <p>criativa</p>
                     <p>rápida</p>
                     <p>inteligente</p>
                     <p>fácil</p>
                 </span>
-                <div> <button>saiba mais</button> <button>nossos trabalhos</button></div>
+                </div>
+                <div> <button class="hover:bg-primary bg-primary rounded-full px-6 py-3">saiba mais</button> <button class="hover:bg-primary rounded-full px-6 py-3">nossos trabalhos</button></div>
             </div>
             <div class="bg-generic-dark-2 rounded-full w-[420px] h-[600px] justify-center items-center">
                 IMG HOLDING PHONE W/ PORTFOLIO SCREEN
@@ -294,6 +300,8 @@
                 <a href="">entre em contato</a>
             </div>
         </div>
+    </div>
+        
     <script src="./js/main.js">
         // MAIN JS //
     </script>

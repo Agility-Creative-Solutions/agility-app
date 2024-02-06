@@ -1,0 +1,16 @@
+body{
+    color: white;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.titles {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: purple;
+}
