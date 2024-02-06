@@ -9,7 +9,7 @@
     <title>Agility Creative Solution App</title>
 </head>
 <body>
-    <div class=" bg-generic-dark-1 w-full h-full flex flex-col items-center">
+    <div class=" bg-generic-dark-1 text-white w-full h-full flex flex-col items-center">
         <!-- HEADER -->
         <div class="flex fixed bg-generic-dark-1 top-0 justify-between py-6 px-8 h-26 items-center w-full">
             <div class="flex gap-4 items-center text-white">
@@ -26,7 +26,7 @@
             </div>
         </div>
         <!-- HOME -->
-        <div class=" w-full min-h-[100vh] flex flex-wrap justify-evenly items-center">
+        <div class=" w-full min-h-[100vh] flex flex-wrap gap-4 justify-evenly items-center">
             <div>
                 <h1 class="text-5xl font-bold text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
                 <div class="flex gap-3 relative w-full">
@@ -39,8 +39,8 @@
                 </span>
                 </div>
                 <div class="relative flex items-center mt-8 gap-6">
-                    <button class="z-10 bg-primary px-8 py-1.5 rounded-full">saiba mais </button>
-                    <button class="z-10">nossos trabalhos</button>
+                    <button class=" bg-primary px-8 py-1.5 rounded-full">saiba mais </button>
+                    <button >nossos trabalhos</button>
                     <!-- <span class="bg-primary px-6 py-3 left-0 absolute rounded-full w-4 z-0"></span> -->
                 </div>
                 
@@ -55,7 +55,7 @@
 
             </div>
             <div class="flex flex-col max-w-xl">
-                <span class="rounded-3xl mb-10 py-1.5 px-2 bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
+                <span class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                     conheça a gente
                 </span>
                 <h2 class="text-4xl mb-8">acreditamos em <br>
@@ -82,79 +82,78 @@
                     </div>
                 </div>           
                 <div class="flex items-center gap-10">
-                    <button class="z-10 bg-primary px-8 py-2 rounded-full">quero começar um projeto!</button>
+                    <button class=" bg-primary px-8 py-2 rounded-full">quero começar um projeto!</button>
                     <button class="text-primary">nossos trabalhos</button>
                 </div>
             </div>
         </div>
         <!-- SERVICES -->
-        <div class="flex flex-col">
-            <div class="flex justify-around">
+        <div class="flex flex-col min-h-[100vh] w-full ">
+            <div class="flex justify-evenly">
                 <div class="flex-col">
-                    <span class="p-2 text-gray-300 bg-primary-dark">nossos serviços</span>
-                    <h2>entregamos a solução <strong class="text-primary">mais eficiente</strong> para seu projeto!</h2>
-                    <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                    <span class="rounded-3xl mb-10 py-1 px-2 bg-generic-gray text-generic-gray-lighter w-36 text-sm flex justify-center">nossos serviços</span>
+                    <h2 class="text-4xl w-[420px]">entregamos a solução <span class="text-primary">mais eficiente</span> para seu projeto!</h2>
+                    <p class="md:max-w-[420px] mt-8 mb-20">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
-                    <button class="px-6 py-3 bg-primary">veja nosso portfólio</button>
+                    <button class="px-10 py-3 bg-primary rounded-3xl">veja nosso portfólio</button>
                 </div>
-                <div class="grid-cols-2">
-                    <div>
-                        <h4>tecnologia</h4>
-                        <span class="h-0.5 w-60 bg-generic-dark-3 relative items-center">  <span class="absolute left-0 bg-primary h-0.5 w-5"></span></span>
-                        <p>App ou Sites</p>
-                        <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                <div class="grid grid-cols-2 gap-x-10 p-6">
+                    <div class="grid-cols-1 max-w-64">
+                        <h4 class="text-generic-gray-lighter">tecnologia</h4>
+                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <p class="text-lg p-1">App ou Sites</p>
+                        <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
                     </div>
-                    <div>
-                        <h4>marca</h4>
-                        <span class="h-0.5 w-60 bg-generic-dark-3 relative items-center">  <span class="absolute left-0 bg-primary h-0.5 w-5"></span></span>
-                        <p>App ou Sites</p>
-                        <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                    <div class="grid-cols-2 max-w-64">
+                        <h4 class="text-generic-gray-lighter">marca</h4>
+                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <p class="text-lg p-1">App ou Sites</p>
+                        <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
                     </div>
-                    <div>
-                        <h4>social</h4>
-                        <span class="h-0.5 w-60 bg-generic-dark-3 relative items-center">  <span class="absolute left-0 bg-primary h-0.5 w-5"></span></span>
-                        <p>App ou Sites</p>
-                        <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                    <div class="grid-cols-1 max-w-64">
+                        <h4 class="text-generic-gray-lighter">social</h4>
+                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <p class="text-lg p-1">App ou Sites</p>
+                        <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
                     </div>
-                    <div>
-                        <h4>consultoria & suporte</h4>
-                        <span class="h-0.5 w-60 bg-generic-dark-3 relative items-center">  <span class="absolute left-0 bg-primary h-0.5 w-5"></span></span>
-                        <p>App ou Sites</p>
-                        <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                    <div class="grid-cols-2 max-w-64">
+                        <h4 class="text-generic-gray-lighter">consultoria & suporte</h4>
+                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <p class="text-lg p-1">App ou Sites</p>
+                        <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col">
-                <div>
-                    <h3>POR QUÊ ESCOLHER A <strong class="text-primary">AGILITY?</strong></h3>
-                    <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+            <div class="flex flex-col items-center mt-40">
+                <div class="flex items-center flex-col w-full">
+                    <h3 class=" text-xl">POR QUÊ ESCOLHER A <strong class="text-primary">AGILITY?</strong></h3>
+                    <p class="p-4 text-generic-gray-lighter mb-20 md:max-w-[356px]">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
                 </div>
-                <div class="flex gap-6">
-                    <div class="flex flex-col">
-                        <img src="./assets/icons/sound.svg" alt="sound-icon"/>
-
-                        <p>design único e tecnologia própria</p>
-                        <p>criamos experiências digitais memoráveis combinando design inovador com a tecnologia mais adequada. Seu projeto será único e eficiente.
+                <div class="flex gap-16 items-center">
+                    <div class="flex flex-col p-10 bg-generic-gray max-w-[350px] max-h-64 justify-center items-center rounded-3xl">
+                        <img src="./assets/icons/sound.svg" alt="sound-icon" width="44px" height="44px" class="mt-6"/>
+                        <p class="mt-6">design único e tecnologia própria</p>
+                        <p class="p-4 text-sm flex text-center text-generic-gray-lighter">
+                            criamos experiências digitais memoráveis combinando design inovador com a tecnologia mais adequada. Seu projeto será único e eficiente.
                         </p>
                     </div>
-                    <div class="flex flex-col">
-                        <img src="./assets/icons/chat.svg" alt="sound-icon"/>
-
-                        <p>comunicação aberta e constante</p>
-                        <p>valorizamos a transparência e mantemos uma comunicação constante. Esteja sempre atualizado sobre o progresso do seu projeto.
-
+                    <div class="flex flex-col p-10 bg-generic-gray max-w-[350px] max-h-64 justify-center items-center rounded-3xl">
+                        <img src="./assets/icons/chat.svg" alt="sound-icon" width="44px" height="44px" class="mt-6"/>
+                        <p class="mt-6">comunicação aberta e constante</p>
+                        <p class="p-4 text-sm flex text-center text-generic-gray-lighter">
+                            valorizamos a transparência e mantemos uma comunicação constante. Esteja sempre atualizado sobre o progresso do seu projeto.
                         </p>
                     </div>
-                    <div class="flex flex-col">
-                        <img src="./assets/icons/sound.svg" alt="sound-icon"/>
-
-                        <p>qualidade e suporte</p>
-                        <p>comprometidos com a excelência, garantimos a qualidade em cada etapa. Além disso, oferecemos suporte contínuo para garantir o sucesso contínuo do seu projeto.
+                    <div class="flex flex-col p-10 bg-generic-gray max-w-[350px] max-h-64 justify-center items-center rounded-3xl">
+                        <img src="./assets/icons/sound.svg" alt="sound-icon" width="44px" height="44px" class="mt-6"/>
+                        <p class="mt-6">design único e tecnologia própria</p>
+                        <p class="p-4 text-sm flex text-center text-generic-gray-lighter">
+                            comprometidos com a excelência, garantimos a qualidade em cada etapa. Além disso, oferecemos suporte contínuo para garantir o sucesso contínuo do seu projeto.
 
                         </p>
                     </div>
@@ -164,47 +163,49 @@
             
         </div>
         <!-- PROJECTS -->
-        <div class="flex flex-col items-center">
-            <span class="p-2 text-gray-300 bg-primary-dark">nossos portfólio</span>
-            <h3>projetos que fizeram a <strong class="text-primary">diferença</strong> na nossa história</h3>
-            <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+        <div class="flex flex-col items-center mt-40 min-h-[100vh]">
+            <span class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
+                nosso portfolio
+            </span>
+            <h3 class="text-4xl md:max-w-[520px] text-center">projetos que fizeram a <strong class="text-primary">diferença</strong> na nossa história</h3>
+            <p class="w-[420px] pt-8 pb-10 text-center text-generic-gray-lighter">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
             </p>
-            <div class=" flex gap-3 rounded-3xl p-3 bg-primary-dark">
-                <button>todos</button>
-                <button>tecnologia</button>
-                <button>design</button>
-                <button>outros</button>
+            <div class=" text-generic-gray-lighter flex gap-3 rounded-3xl p-3 bg-generic-gray">
+                <button class="focus:text-white selection:ease-out first:text-white focus-within:text-generic-gray-lighter">todos</button>
+                <button class="focus:text-white selection:ease-out">tecnologia</button>
+                <button class="focus:text-white selection:ease-out">design</button>
+                <button class="focus:text-white selection:ease-out">outros</button>
             </div>
-            <div class="flex gap-6">
-                <div>
-                    <span class="bg-primary rounded-3xl h-[360px] w-[300px]"></span>
+            <div class="flex flex-wrap gap-6 mt-16 max-w-[1200px]">
+                <div class="flex flex-col items-center m-6 p-3">
+                    <div class="bg-primary rounded-3xl h-[360px] w-[297px] text-center"></div>
                     <p>Exemplo projeto 1</p>
-                    <a target="_blank" class="text-gray-300">Site</a>
+                    <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div>
-                    <span class="bg-primary rounded-3xl h-[360px] w-[300px]"></span>
+                <div class="flex flex-col items-center mt-14 m-6 p-3">
+                    <div class="bg-primary rounded-3xl h-[360px] w-[297px] text-center"></div>
                     <p>Exemplo projeto 1</p>
-                    <a target="_blank" class="text-gray-300">Site</a>
+                    <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div>
-                    <span class="bg-primary rounded-3xl h-[360px] w-[300px]"></span>
+                <div class="flex flex-col items-center m-6 p-3">
+                    <div class="bg-primary rounded-3xl h-[360px] w-[297px] text-center"></div>
                     <p>Exemplo projeto 1</p>
-                    <a target="_blank" class="text-gray-300">Site</a>
+                    <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div>
-                    <span class="bg-primary rounded-3xl h-[360px] w-[300px]"></span>
+                <div class="flex flex-col items-center m-6 p-3">
+                    <div class="bg-primary rounded-3xl h-[360px] w-[297px] text-center"></div>
                     <p>Exemplo projeto 1</p>
-                    <a target="_blank" class="text-gray-300">Site</a>
+                    <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div>
-                    <span class="bg-primary rounded-3xl h-[360px] w-[300px]"></span>
+                <div class="flex flex-col items-center mt-14 m-6 p-3">
+                    <div class="bg-primary rounded-3xl h-[360px] w-[297px] text-center"></div>
                     <p>Exemplo projeto 1</p>
-                    <a target="_blank" class="text-gray-300">Site</a>
+                    <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div>
-                    <span class="bg-primary rounded-3xl h-[360px] w-[300px]"></span>
+                <div class="flex flex-col items-center m-6 p-3">
+                    <div class="bg-primary rounded-3xl h-[360px] w-[297px] text-center"></div>
                     <p>Exemplo projeto 1</p>
-                    <a target="_blank" class="text-gray-300">Site</a>
+                    <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
             </div>
         </div>
@@ -212,63 +213,65 @@
 
         <!-- FEEDBACK -->
 
-        <div class="flex">
+        <div class="flex flex-wrap items-center justify-center mr-28 gap-20 mt-36">
             <div>
-                <span class="p-2 text-gray-300 bg-primary-dark">nossos portfólio</span>
-                <h3>o que alguns clientes falam da <strong class="text-primary">agility</strong></h3>
-                <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                <span class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
+                    nosso portfolio
+                </span>
+                <h3 class="text-4xl md:max-w-[380px]">o que alguns clientes falam da <strong class="text-primary">agility</strong></h3>
+                <p class="text-generic-gray-lighter md:max-w-[380px] pt-5">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                 </p>
             </div>
-            <div>
-                <div>
-                    <img src="./assets/icons/chat.svg" alt="icon">
-                    <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+            <div class="flex flex-wrap items-center justify-center gap-y-6 gap-x-20 max-w-3xl">
+                <div class="rounded-2xl mt-12 bg-secondary-purple-dark p-4 flex flex-col justify-around w-[342px] h-[320px]">
+                    <img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
+                    <p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
 
                     <span class="flex gap-2">
-                        <img src="" alt="dev-image" class="rounded-full bg-white">
+                        <div class="rounded-full w-10 h-10 bg-white"></div>
                         <div>
                             <p class="font-semibold">Leandro Pontes</p>
-                            <p>Agilock Rastreamento</p>
+                            <p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
                         </div>
                     </span>
                 </div>
-                <div>
-                    <img src="./assets/icons/chat.svg" alt="icon">
-                    <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                <div class="rounded-2xl bg-secondary-purple-dark p-4 flex flex-col justify-around w-[342px] h-[320px]">
+                    <img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
+                    <p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
 
                     <span class="flex gap-2">
-                        <img src="" alt="dev-image" class="rounded-full bg-white">
+                        <div class="rounded-full w-10 h-10 bg-white"></div>
                         <div>
                             <p class="font-semibold">Leandro Pontes</p>
-                            <p>Agilock Rastreamento</p>
+                            <p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
                         </div>
                     </span>
                 </div>
-                <div>
-                    <img src="./assets/icons/chat.svg" alt="icon">
-                    <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                <div class="rounded-2xl mt-12 bg-secondary-purple-dark p-4 flex flex-col justify-around w-[342px] h-[320px]">
+                    <img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
+                    <p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
 
                     <span class="flex gap-2">
-                        <img src="" alt="dev-image" class="rounded-full bg-white">
+                        <div class="rounded-full w-10 h-10 bg-white"></div>
                         <div>
                             <p class="font-semibold">Leandro Pontes</p>
-                            <p>Agilock Rastreamento</p>
+                            <p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
                         </div>
                     </span>
                 </div>
-                <div>
-                    <img src="./assets/icons/chat.svg" alt="icon">
-                    <p>descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                <div class="rounded-2xl bg-secondary-purple-dark p-4 flex flex-col justify-around w-[342px] h-[320px]">
+                    <img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
+                    <p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
 
                     <span class="flex gap-2">
-                        <img src="" alt="dev-image" class="rounded-full bg-white">
+                        <div class="rounded-full w-10 h-10 bg-white"></div>
                         <div>
                             <p class="font-semibold">Leandro Pontes</p>
-                            <p>Agilock Rastreamento</p>
+                            <p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
                         </div>
                     </span>
                 </div>
@@ -277,39 +280,40 @@
 
 
         <!-- CONTACT US -->
-        <div class="flex justify-around h-[100vh] w-full">
-            <div>
-                <span class="p-2 text-gray-300 bg-primary-dark">nossos portfólio</span>
-                <h3>quer falar com a gente? <br>
+        <div class="grid grid-flow-row-dense grid-cols-3 my-40">
+            <div class="col-span-2 flex flex-col items-center">
+                <span class="rounded-3xl mb-8 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
+                    entre em contato
+                </span>
+                <h3 class="text-4xl">quer falar com a gente? <br>
                 <strong class="text-primary">manda um oi!</strong></h3>
-                <div class="flex flex-col gap-4">
-                    <span> <img src="./assets/icons/email.svg" alt="email-icon"> contato@agilitycreative.com</span>
-                    <span> <img src="./assets/icons/email.svg" alt="email-icon"> contato@agilitycreative.com</span>
-                    <span> <img src="./assets/icons/email.svg" alt="email-icon"> contato@agilitycreative.com</span>
+                <div class="flex flex-col gap-4 mt-20">
+                    <div class="flex gap-3"> <img src="./assets/icons/email.svg" alt="email-icon" width="24px" height="24px"> contato@agilitycreative.com</div>
+                    <div class="flex gap-3"> <img src="./assets/icons/email.svg" alt="email-icon" width="24px" height="24px"> contato@agilitycreative.com</div>
+                    <div class="flex gap-3"> <img src="./assets/icons/email.svg" alt="email-icon" width="24px" height="24px"> contato@agilitycreative.com</div>
                 </div>
             </div>
-            <div class="bg-generic-dark-2 rounded-3xl p-5">
-                <p>fale com a gente</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam quaerat facilis officiis.</p>
-                <form action="" method="post">
-                    <input type="text" placeholder="seu nome">
-                    <input type="text" placeholder="seu email">
-                    <textarea name="" id="" rows="6" placeholder=" sua mensagem"></textarea>
+            <div class="bg-generic-dark-2 rounded-3xl p-8 w-96">
+                <p class="text-lg">fale com a gente</p>
+                <p class="text-generic-gray-lighter text-sm mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam quaerat facilis officiis.</p>
+                <form action="" method="post" class="flex flex-col gap-3 bg-generic-dark-2 placeholder:text-generic-gray">
+                    <input type="text" placeholder="seu nome" class="bg-generic-dark-2 border-[1px] border-generic-gray p-2 px-4 rounded-2xl">
+                    <input type="text" placeholder="seu email" class="bg-generic-dark-2 border-[1px] border-generic-gray p-2 px-4 rounded-2xl">
+                    <textarea name="" id="" rows="6" placeholder=" sua mensagem" class="bg-generic-dark-2 border-[1px] border-generic-gray p-2 px-3 rounded-2xl"></textarea>
                 </form>
-                <button class="p-4 items-center flex bg-primary">entrar em contato</button>
+                <button class="py-3 mt-8 w-full relative justify-center flex items-center bg-primary rounded-3xl">entrar em contato <img src="./assets/social/whatsapp.svg" alt="wpp-image" width="27px" height="27px" class="absolute right-2"></button>
             </div>
         </div>
 
         <!-- FOOTER -->
 
-        <div class="justify-evenly">
-
-            <div class="flex flex-col">
-                <span><img src="./assets/images/logo.svg" alt="agility-logo"><p>AGILITY</p></span>
-                <p class="max-w-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, architecto expedita. Sequi deleniti inventore incidunt ut voluptatum. Quod, veniam! Illo, natus veritatis! Recusandae architecto incidunt maiores. Similique nisi quae incidunt!</p>
+        <div class="flex justify-around bg-generic-purple-dark h-64 items-center w-full">
+            <div class="flex">
+                <div class="flex gap-4"><img width="36px" height="28px" src="./assets/images/logo.svg " alt="agility-logo"><p class="font-semibold text-xl">AGILITY</p></div>
+                <p class="max-w-20"></p>
             </div>
 
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col justify-center items-center text-xs gap-1">
 
                 <a href="">inicio</a>
                 <a href="">sobre nós</a>
