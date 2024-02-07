@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="/src/input.css">
     <link rel="stylesheet" href="./output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Agility Creative Solution App</title>
 </head>
 <body>
@@ -26,7 +27,8 @@
             </div>
         </div>
         <!-- HOME -->
-        <div class=" w-full min-h-[100vh] flex flex-wrap gap-4 justify-evenly items-center">
+        <div class=" w-full min-h-[100vh] flex flex-wrap gap-4 justify-evenly items-center" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <div>
                 <h1 class="text-5xl font-bold text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
                 <div class="flex gap-3 relative w-full">
@@ -50,7 +52,8 @@
             </div>
         </div>
         <!-- ABOUT US -->
-        <div class="flex flex-wrap w-full items-center justify-evenly gap-12 min-h-[100vh]">
+        <div class="flex flex-wrap w-full items-center justify-evenly gap-12 min-h-[100vh]" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <div class="bg-generic-dark-2 rounded-full min-w-[560px] h-[560px] flex justify-center items-center">IMG
 
             </div>
@@ -89,7 +92,8 @@
         </div>
         <!-- SERVICES -->
         <div class="flex flex-col min-h-[100vh] w-full ">
-            <div class="flex justify-evenly">
+            <div class="flex justify-evenly" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
                 <div class="flex-col">
                     <span class="rounded-3xl mb-10 py-1 px-2 bg-generic-gray text-generic-gray-lighter w-36 text-sm flex justify-center">nossos serviços</span>
                     <h2 class="text-4xl w-[420px]">entregamos a solução <span class="text-primary">mais eficiente</span> para seu projeto!</h2>
@@ -128,7 +132,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center mt-40">
+            <div class="flex flex-col items-center mt-40" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
                 <div class="flex items-center flex-col w-full">
                     <h3 class=" text-xl">POR QUÊ ESCOLHER A <strong class="text-primary">AGILITY?</strong></h3>
                     <p class="p-4 text-generic-gray-lighter mb-20 md:max-w-[356px]">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
@@ -163,7 +168,8 @@
             
         </div>
         <!-- PROJECTS -->
-        <div class="flex flex-col items-center mt-40 min-h-[100vh]">
+        <div class="flex flex-col items-center mt-40 min-h-[100vh]" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <span class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                 nosso portfolio
             </span>
@@ -213,7 +219,8 @@
 
         <!-- FEEDBACK -->
 
-        <div class="flex flex-wrap items-center justify-center mr-28 gap-20 mt-36">
+        <div class="flex flex-wrap items-center justify-center mr-28 gap-20 mt-36" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <div>
                 <span class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                     nosso portfolio
@@ -280,7 +287,8 @@
 
 
         <!-- CONTACT US -->
-        <div class="grid grid-flow-row-dense grid-cols-3 my-40">
+        <div class="grid grid-flow-row-dense grid-cols-3 my-40" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <div class="col-span-2 flex flex-col items-center">
                 <span class="rounded-3xl mb-8 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                     entre em contato
@@ -327,5 +335,9 @@
     <script src="./js/main.js">
         // MAIN JS //
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
