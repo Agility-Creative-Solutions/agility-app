@@ -17,17 +17,31 @@
                 <img width="36px" height="28px" src="./assets/images/logo.svg" />
                 <span class="text-white font-medium">AGILITY</span>
             </div> 
-            <div class="flex gap-10 items-center">
+            <div >
+                <div id="normal-menu" class="md:flex hidden gap-10 items-center">
                 <a href="#Home">Home</a>
                 <a href="#About-us">About us</a>
                 <a href="#Services">Services</a>
                 <a href="#Projects">Projects</a>
                 <a href="#Feedback">Feedbacks</a>
                 <a href="#Contact-us">Contact us</a>
+                </div>
+                <button id="menu-button" class="visible md:hidden mr-6">&#9776;</button>
+                <div id="menu-burguer" class="hidden absolute md:hidden top-12 right-[60px] p-5 md:p-0 rounded-3xl bg-generic-dark-2 border-2">
+                    <ul class="md:hidden shadow-md">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About-us">About us</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Feedback">Feedbacks</a></li>
+                        <li><a href="#Contact-us">Contact us</a></li>
+                    </ul>
+                  </div>
+                
             </div>
         </div>
         <!-- HOME -->
-        <div id="Home" class="w-full min-h-[100vh] flex flex-wrap gap-4 justify-evenly items-center mt-10" data-aos="fade-up"
+        <div id="Home" class="w-full min-h-[100vh] mt-40 flex flex-wrap gap-4 justify-evenly items-center lg:mt-10 p-4" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
             <div>
                 <h1 class="text-5xl font-bold text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
@@ -47,14 +61,14 @@
                 </div>
                 
             </div>
-            <div class="bg-generic-dark-2 rounded-[105px] w-[420px] h-[600px] flex justify-center items-center">
+            <div class="bg-generic-dark-2 rounded-[105px] w-[315px] h-[450px] md:w-[420px] md:h-[600px] flex justify-center items-center">
                 IMG HOLDING PHONE W/ PORTFOLIO SCREEN
             </div>
         </div>
         <!-- ABOUT US -->
-        <div id="About-us" class="flex flex-wrap w-full items-center justify-evenly gap-12 min-h-[100vh]" data-aos="fade-up"
+        <div id="About-us" class="flex flex-wrap w-full items-center justify-evenly gap-12 min-h-[100vh] p-4" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-            <div class="bg-generic-dark-2 rounded-full min-w-[560px] h-[560px] flex justify-center items-center">IMG
+            <div class="bg-generic-dark-2 rounded-full w-[340px] h-[340px] lg:w-[560px] lg:h-[560px] flex justify-center items-center">IMG
 
             </div>
             <div class="flex flex-col max-w-xl">
@@ -91,41 +105,41 @@
             </div>
         </div>
         <!-- SERVICES -->
-        <div id="Services" class="flex flex-col min-h-[100vh] w-full ">
-            <div class="flex justify-evenly" data-aos="fade-up"
+        <div id="Services" class="flex flex-col min-h-[100vh] w-full p-4 ">
+            <div class="flex flex-wrap justify-evenly" data-aos="fade-up"
             data-aos-anchor-placement="top-center">
-                <div class="flex-col">
+                <div class="flex-col mb-20 md:mb-0">
                     <span class="rounded-3xl mb-10 py-1 px-2 bg-generic-gray text-generic-gray-lighter w-36 text-sm flex justify-center">nossos serviços</span>
-                    <h2 class="text-4xl w-[420px]">entregamos a solução <span class="text-primary">mais eficiente</span> para seu projeto!</h2>
-                    <p class="md:max-w-[420px] mt-8 mb-20">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+                    <h2 class="md:text-4xl text-3xl">entregamos a solução <p class="text-primary">mais eficiente</p> para seu projeto!</h2>
+                    <p class="mt-8 mb-20">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
                     <a href="#Projects" class="px-10 py-3 bg-primary rounded-3xl">veja nosso portfólio</a>
                 </div>
                 <div class="grid grid-cols-2 gap-x-10 p-6">
                     <div class="grid-cols-1 max-w-64">
                         <h4 class="text-generic-gray-lighter">tecnologia</h4>
-                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <span class="flex items-center absolute h-[1px] w-full max-w-60 mr-8 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
                         <p class="text-lg p-1">App ou Sites</p>
                         <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
                     </div>
                     <div class="grid-cols-2 max-w-64">
                         <h4 class="text-generic-gray-lighter">marca</h4>
-                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <span class="flex items-center absolute h-[1px] w-full max-w-60 mr-8 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
                         <p class="text-lg p-1">App ou Sites</p>
                         <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
                     </div>
                     <div class="grid-cols-1 max-w-64">
                         <h4 class="text-generic-gray-lighter">social</h4>
-                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <span class="flex items-center absolute h-[1px] w-full max-w-60 mr-8 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
                         <p class="text-lg p-1">App ou Sites</p>
                         <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
                     </div>
                     <div class="grid-cols-2 max-w-64">
                         <h4 class="text-generic-gray-lighter">consultoria & suporte</h4>
-                        <span class="flex items-center absolute h-[1px] w-60 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
+                        <span class="flex items-center absolute h-[1px] w-60 max-w-60 mr-8 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
                         <p class="text-lg p-1">App ou Sites</p>
                         <p class="text-sm">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                         </p>
@@ -139,7 +153,7 @@
                     <p class="p-4 text-generic-gray-lighter mb-20 md:max-w-[356px]">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                     </p>
                 </div>
-                <div class="flex gap-16 items-center">
+                <div class="flex flex-wrap justify-center gap-16 items-center">
                     <div class="flex flex-col p-10 bg-generic-gray max-w-[350px] max-h-64 justify-center items-center rounded-3xl">
                         <img src="./assets/icons/sound.svg" alt="sound-icon" width="44px" height="44px" class="mt-6"/>
                         <p class="mt-6">design único e tecnologia própria</p>
@@ -163,18 +177,19 @@
                         </p>
                     </div>
                 </div>
-
             </div>
             
         </div>
         <!-- PROJECTS -->
-        <div id="Projects" class="flex flex-col items-center mt-40 min-h-[100vh]" data-aos="fade-up"
+        <div id="Projects" class="flex flex-col items-center justify-center mt-40 min-h-[100vh] p-4" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
             <a class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                 nosso portfolio
             </a>
-            <h3 class="text-4xl md:max-w-[520px] text-center">projetos que fizeram a <strong class="text-primary">diferença</strong> na nossa história</h3>
-            <p class="w-[420px] pt-8 pb-10 text-center text-generic-gray-lighter">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+            <h3 class="md:text-4xl text-3xl md:max-w-[520px] text-center text-wrap p-4">
+                projetos que fizeram a <strong class="text-primary">diferença</strong> na nossa história</h3>
+            <p class="md:w-[420px] pt-8 pb-10 text-center text-generic-gray-lighter text-wrap">
+                descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
             </p>
             <div class=" text-generic-gray-lighter flex gap-3 rounded-3xl p-3 bg-generic-gray">
                 <button class="focus:text-white selection:ease-out first:text-white focus-within:text-generic-gray-lighter">todos</button>
@@ -182,7 +197,7 @@
                 <button class="focus:text-white selection:ease-out">design</button>
                 <button class="focus:text-white selection:ease-out">outros</button>
             </div>
-            <div class="flex flex-wrap gap-6 mt-16 max-w-[1200px]">
+            <div class="flex flex-wrap items-center justify-center gap-6 mt-16 max-w-[1200px]">
                 <div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
                     <div class="bg-primary rounded-3xl h-[360px] w-[297px] text-center"></div>
                     <p>Exemplo projeto 1</p>
@@ -219,9 +234,9 @@
 
         <!-- FEEDBACK -->
 
-        <div id="Feedback" class="flex flex-wrap items-center justify-center mr-28 gap-20 mt-36" data-aos="fade-up"
+        <div id="Feedback" class="flex flex-wrap items-center justify-center gap-20 mt-36 w-full p-4" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-            <div>
+            <div class="w-full flex flex-col items-center">
                 <span class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                     nosso portfolio
                 </span>
@@ -229,7 +244,7 @@
                 <p class="text-generic-gray-lighter md:max-w-[380px] pt-5">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
                 </p>
             </div>
-            <div class="flex flex-wrap items-center justify-center gap-y-6 gap-x-20 max-w-3xl">
+            <div class="flex flex-wrap items-center justify-center gap-y-6 max-w-3xl">
                 <div class="rounded-2xl mt-12 bg-secondary-purple-dark p-4 flex flex-col justify-around w-[342px] h-[320px]">
                     <img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
                     <p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
@@ -287,9 +302,9 @@
 
 
         <!-- CONTACT US -->
-        <div id="Contact-us" class="grid grid-flow-row-dense grid-cols-3 my-40" data-aos="fade-up"
+        <div id="Contact-us" class="flex items-center justify-center flex-wrap gap-20 my-40" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-            <div class="col-span-2 flex flex-col items-center">
+            <div class="flex flex-col mx-20 items-center">
                 <span class="rounded-3xl mb-8 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                     entre em contato
                 </span>
