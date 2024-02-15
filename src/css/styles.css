@@ -2,21 +2,3 @@ body {
   font-family: 'Inter', sans-serif;
   overflow-x: hidden
 }
-
-@keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 5em;
-    }
-}
-@keyframes blinkCursor {
-    from{
-     border-right: 1px solid #A95FE3;
-
-    }
-    to{
-      border-right: transparent
-    }
-  }
