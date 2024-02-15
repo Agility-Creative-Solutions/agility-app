@@ -48,13 +48,10 @@
         data-aos-anchor-placement="top-center">
             <div>
                 <h1 class="text-5xl font-bold text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
-                <div class="flex gap-3 relative w-full">
+                <div class="flex gap-2 relative w-full">
                     <p class="pl-1 font-medium text-xl">transforme sua presença digital de forma</p>
-                <span class="flex flex-col text-xl gap-1 text-primary">
-                    <p class="typingAnimation">criativa</p>
-                    <p class="typingAnimation">rápida</p>
-                    <p class="typingAnimation">inteligente</p>
-                    <p class="typingAnimation">fácil</p>
+                <span class="flex text-xl text-primary">
+                    <span id="element"></span>
                 </span>
                 </div>
                 <div class="relative flex items-center mt-8 gap-6">
@@ -359,5 +356,14 @@
     <script>
         AOS.init();
       </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['criativa', 'rápida', 'inteligente', 'fácil'],
+          typeSpeed: 50,
+          loop: true,
+        });
+      </script>
+    
 </body>
 </html>

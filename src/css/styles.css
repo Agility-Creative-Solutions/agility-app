@@ -27,27 +27,3 @@ body {
       border-right: transparent
     }
   }
-
-.typingAnimation {
-    border-right: 1px solid #A95FE3;
-    color: #A95FE3;
-    padding: 0px;
-    display: flex;
-    font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-    animation: blinkCursor 1200ms steps(20) infinite normal,
-    typing 2s steps(20) 1s normal both;
-  };
-
-  @keyframes blinkCursor {
-    from{
-     border-right: 1px solid black;
-
-    }
-    to{
-      border-right: transparent
-    }
-  }
