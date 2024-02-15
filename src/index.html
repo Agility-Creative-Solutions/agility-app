@@ -15,19 +15,19 @@
 <body>
     <div class=" bg-generic-dark-1 text-white w-full h-full flex flex-col items-center">
         <!-- HEADER -->
-        <div class="flex fixed fixed-header bg-generic-dark-1 top-0 justify-between py-6 px-8 h-26 items-center w-full">
+        <div class="flex fixed z-50 bg-generic-dark-1 top-0 justify-between py-6 px-8 h-26 items-center w-full">
             <div class="flex gap-4 items-center text-white">
                 <img width="36px" height="28px" src="./assets/images/logo.svg" />
                 <span class="text-white font-medium">AGILITY</span>
             </div> 
             <div >
                 <div id="normal-menu" class="md:flex hidden gap-10 items-center">
-                <a href="#Home">Home</a>
-                <a href="#About-us">About us</a>
-                <a href="#Services">Services</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Feedback">Feedbacks</a>
-                <a href="#Contact-us">Contact us</a>
+                <a href="#Home" target="_self">Home</a>
+                <a href="#About-us" target="_self">About us</a>
+                <a href="#Services" target="_self">Services</a>
+                <a href="#Projects" target="_self">Projects</a>
+                <a href="#Feedback" target="_self">Feedbacks</a>
+                <a href="#Contact-us" target="_self">Contact us</a>
                 </div>
                 <button id="menu-button" class="visible md:hidden mr-6">&#9776;</button>
                 <div id="menu-burguer" class="hidden absolute md:hidden top-12 right-[60px] p-5 md:p-0 rounded-3xl bg-generic-dark-2 border-2">
@@ -106,7 +106,7 @@
         </div>
         <!-- SERVICES -->
             <div class="flex flex-wrap gap-10 justify-evenly p-4" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
+            data-aos-anchor-placement="top-center" id="Services">
                 <div class="flex-col mb-20 md:mb-0">
                     <span class="rounded-3xl mb-10 py-1 px-2 bg-generic-gray text-generic-gray-lighter w-36 text-sm flex justify-center">nossos serviços</span>
                     <h2 class="md:text-4xl text-3xl">entregamos a solução <p class="text-primary">mais eficiente</p> para seu projeto!</h2>
@@ -349,13 +349,16 @@
         </div>
     </div>
         
-    <script src="./js/main.js">
-        // MAIN JS //
-    </script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"> </script>
+
+        <!--Element Screen animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
+
+      <!-- Type Animation -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
