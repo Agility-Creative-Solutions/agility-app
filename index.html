@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Agility Creative - Soluções digitais inteligentes</title>
 </head>
-<body>
-    <div class=" bg-generic-dark-1 text-white w-full h-full flex flex-col items-center">
+<body class=" bg-generic-dark-1 text-white w-full h-full flex flex-col items-center space-y-24 container m-auto p-4" >
         <!-- HEADER -->
         <div class="flex fixed z-50 bg-generic-dark-1 top-0 justify-between py-6 px-8 h-26 items-center w-full">
             <div class="flex gap-4 items-center text-white">
@@ -30,7 +29,7 @@
                 <a href="#Contact-us" target="_self">Contact us</a>
                 </div>
                 <button id="menu-button" class="visible md:hidden mr-6">&#9776;</button>
-                <div id="menu-burguer" class="hidden absolute md:hidden top-12 right-[60px] p-5 md:p-0 rounded-3xl bg-generic-dark-2 border-2">
+                <div id="menu-burguer" class="hidden absolute md:hidden top-12 right-[40px] p-5 md:p-0 rounded-3xl bg-generic-dark-2 border-2">
                     <ul class="md:hidden shadow-md">
                         <li><a href="#Home">Home</a></li>
                         <li><a href="#About-us">About us</a></li>
@@ -44,7 +43,7 @@
             </div>
         </div>
         <!-- HOME -->
-        <div id="Home" class="w-full min-h-[100vh] mt-40 flex flex-wrap gap-4 justify-evenly items-center lg:mt-10 p-4" data-aos="fade-down"
+        <div id="Home" class="w-full flex flex-wrap gap-4 justify-evenly items-center" data-aos="fade-down"
         data-aos-anchor-placement="top-center">
             <div>
                 <h1 class="text-5xl font-bold text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
@@ -66,7 +65,7 @@
             </div>
         </div>
         <!-- ABOUT US -->
-        <div id="About-us" class="flex flex-wrap w-full items-center justify-evenly gap-12 min-h-[100vh] p-4" data-aos="fade-down"
+        <div id="About-us" class="flex flex-wrap w-full items-center justify-evenly gap-12" data-aos="fade-down"
         data-aos-anchor-placement="top-center">
             <div class="bg-generic-dark-2 rounded-full w-[340px] h-[340px] lg:w-[560px] lg:h-[560px] flex justify-center items-center">IMG
 
@@ -105,7 +104,8 @@
             </div>
         </div>
         <!-- SERVICES -->
-            <div class="flex flex-wrap gap-10 justify-evenly p-4" data-aos="fade-down"
+        <div>
+            <div class="flex flex-wrap gap-10 justify-evenly" data-aos="fade-down"
             data-aos-anchor-placement="top-center" id="Services">
                 <div class="flex-col mb-20 md:mb-0">
                     <span class="rounded-3xl mb-10 py-1 px-2 bg-generic-gray text-generic-gray-lighter w-36 text-sm flex justify-center">nossos serviços</span>
@@ -180,8 +180,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+            
         <!-- PROJECTS -->
-        <div id="Projects" class="flex flex-col items-center justify-center mt-40 min-h-[100vh] p-4" data-aos="fade-down"
+        <div id="Projects" class="flex flex-col items-center justify-center" data-aos="fade-down"
         data-aos-anchor-placement="top-center">
             <a class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
                 nosso portfolio
@@ -235,7 +237,7 @@
 
         <!-- FEEDBACK -->
 
-        <div id="Feedback" class="flex flex-wrap items-center justify-center gap-20 mt-36 w-full p-4" data-aos="fade-down"
+        <div id="Feedback" class="flex flex-wrap items-center justify-center gap-20 w-full " data-aos="fade-down"
         data-aos-anchor-placement="top-center">
             <div class="w-full flex flex-col items-center">
                 <span class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
@@ -304,7 +306,7 @@
 
 
         <!-- CONTACT US -->
-        <div id="Contact-us" class="flex items-center justify-center flex-wrap gap-20 my-40" data-aos="fade-down"
+        <div id="Contact-us" class="flex items-center justify-center flex-wrap gap-20 " data-aos="fade-down"
         data-aos-anchor-placement="top-center">
             <div class="flex flex-col mx-20 items-center">
                 <span class="rounded-3xl mb-8 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter w-36 flex justify-center">
@@ -329,10 +331,9 @@
                 <button onclick='goToWhatsapp()' class="py-3 mt-8 w-full relative justify-center flex items-center bg-primary rounded-3xl active:scale-95">entrar em contato <img src="./assets/social/whatsapp.svg" alt="wpp-image" width="27px" height="27px" class="absolute right-2"></button>
             </div>
         </div>
-
         <!-- FOOTER -->
 
-        <div class="flex justify-around bg-generic-purple-dark h-64 items-center w-full">
+        <div class="flex justify-around max-w-none min-w-[100vw] bg-generic-purple-dark h-64 items-center w-full">
             <div class="flex">
                 <div class="flex gap-4"><img width="36px" height="28px" src="./assets/images/logo.svg " alt="agility-logo"><p class="font-semibold text-xl">AGILITY</p></div>
                 <p class="max-w-20"></p>
@@ -347,7 +348,6 @@
                 <a href="#Contact-us">entre em contato</a>
             </div>
         </div>
-    </div>
         
     <!-- MAIN JS -->
     <script src="./js/main.js"> </script>
