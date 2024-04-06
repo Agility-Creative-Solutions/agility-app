@@ -9,39 +9,43 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Agility Creative - Soluções digitais inteligentes</title>
 </head>
-<body class=" from-primary-bg-dark-lighter to-primary-bg-dark bg-gradient-to-r max-w-6xl text-white w-full h-full flex flex-col items-center space-y-28 container m-auto px-4" >
+<body class=" from-primary-bg-dark-lighter to-primary-bg-darkness bg-gradient-to-r max-w-6xl text-white w-full h-full flex flex-col items-center space-y-32 container m-auto px-4" >
         <!-- HEADER -->
-        <div class="flex fixed z-50 bg-primary-bg-darkness top-0 justify-between py-6 px-8 h-26 items-center min-w-[100vw]">
-            <div class="flex gap-4 items-center text-white">
-                <img width="36px" height="28px" src="./assets/images/logo.svg" />
-                <img width="90px" height="26px" src="./assets/images/logoname.svg" />
-            </div> 
-            <div >
-                <div id="normal-menu" class="md:flex hidden gap-10 items-center">
-                <a href="#Home" target="_self">Home</a>
-                <a href="#About-us" target="_self">Sobre a Agility</a>
-                <a href="#Projects" target="_self">Projects</a>
-                <a href="#Contact-us" target="_self">Falar com a gente</a>
+        <div class="flex fixed z-50 bg-gradient-to-r from-primary-bg-darkness to-primary-bg-dark-lighter top-0 py-6 h-26 items-center min-w-[100vw]">
+            <div class="flex m-auto w-full max-w-6xl justify-between">
+                <div class="flex gap-4 items-center text-white">
+                    <img width="44px" height="38px" src="./assets/images/logo.svg" />
+                    <img width="135px" height="40px" src="./assets/images/logoname.svg" />
+                </div> 
+                <div class="my-auto h-full">
+                    <div id="normal-menu" class="md:flex hidden gap-10 items-center justify-center m-auto">
+                    <a href="#Home" target="_self">Home</a>
+                    <a href="#About-us" target="_self">Sobre a Agility</a>
+                    <a href="#Projects" target="_self">Projects</a>
+                    <a href="#Contact-us" target="_self">Falar com a gente</a>
+                    </div>
+                    <button id="menu-button" class="visible md:hidden mr-6">&#9776;</button>
+                    <div id="menu-burguer" class="hidden absolute md:hidden top-12 right-[40px] p-5 md:p-0 rounded-3xl primary-bg-dark border-2">
+                        <ul class="md:hidden shadow-md">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About-us">Sobre a Agility</a></li>
+                            <li><a href="#Projects">Projects</a></li>
+                            <li><a href="#Contact-us">Falar com a gente</a></li>
+                        </ul>
+                      </div>
+                    
                 </div>
-                <button id="menu-button" class="visible md:hidden mr-6">&#9776;</button>
-                <div id="menu-burguer" class="hidden absolute md:hidden top-12 right-[40px] p-5 md:p-0 rounded-3xl primary-bg-dark border-2">
-                    <ul class="md:hidden shadow-md">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#About-us">Sobre a Agility</a></li>
-                        <li><a href="#Projects">Projects</a></li>
-                        <li><a href="#Contact-us">Falar com a gente</a></li>
-                    </ul>
-                  </div>
                 
             </div>
+            
         </div>
         <!-- HOME -->
         <div id="Home" class="w-full flex flex-wrap gap-4 justify-between items-center" data-aos="fade-down"
         data-aos-anchor-placement="top-center" data-aos-once="true">
-            <div class="space-y-6">
+            <div class="space-y-2 mt-32">
                 <h1 class=" text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
                 <div class="relative w-full">
                     <p class="pl-1 font-light text-2xl">Transforme sua presença digital de forma <span class=" text-2xl font-medium text-primary">
@@ -50,7 +54,7 @@
                 
                 </div>
                 <div>
-                    <button class="active:scale-95 px-11 py-2.5 text-lg bg-primary rounded-full">CONHEÇA MAIS</button>
+                    <button class="active:scale-95 px-11 py-2.5 text-lg mt-4 bg-primary rounded-full">CONHEÇA MAIS</button>
                 </div>
                 
             </div>
@@ -101,7 +105,9 @@
             <div class="flex flex-wrap gap-10 justify-between w-full" data-aos="fade-down"
             data-aos-anchor-placement="top-center" id="Services" data-aos-once="true" data-aos-offset="-200"> 
                 <div class="flex-col mb-20 md:mb-0">
-                    <span class="rounded-3xl mb-10 py-1 px-2 bg-generic-gray text-generic-gray-lighter max-w-36 text-sm flex justify-center">Nossos serviços</span>
+                    <span class="rounded-3xl mb-10 py-1 px-2 bg-generic-gray text-generic-gray-lighter max-w-36 text-sm flex justify-center items-center text-center">
+                        Nossos serviços
+                    </span>
                     <h2 >Entregamos a solução <p class="text-primary">mais eficiente</p> para seu projeto!</h2>
                     <p class="mt-8 mb-12">Descubra como podemos impulsionar o seu negócio. <br> conheça mais sobre nossos serviços.
                     </p>
@@ -146,7 +152,7 @@
                     </p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-16 items-center">
-                    <div class="flex flex-col p-8 bg-generic-gray max-w-[330px] h-full justify-center items-center rounded-3xl" data-aos-offset="-100" data-aos="fade-down"
+                    <div class="flex flex-col p-8 bg-primary-bg-dark max-w-[330px] h-full justify-center items-center rounded-3xl" data-aos-offset="-100" data-aos="fade-down"
                     data-aos-anchor-placement="top-center" data-aos-duration="500" data-aos-once="true">
                         <img src="./assets/icons/sound.svg" alt="sound-icon" width="44px" height="44px" class="mt-6"/>
                         <p class="mt-6">Design único e tecnologia própria</p>
@@ -154,7 +160,7 @@
                             Criamos experiências digitais memoráveis combinando design inovador com a tecnologia mais adequada. Seu projeto será único e eficiente.
                         </p>
                     </div>
-                    <div class="flex flex-col p-8 bg-generic-gray max-w-[330px] h-full justify-center items-center rounded-3xl" data-aos="fade-down"
+                    <div class="flex flex-col p-8 bg-primary-bg-dark max-w-[330px] h-full justify-center items-center rounded-3xl" data-aos="fade-down"
                     data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos-once="true">
                         <img src="./assets/icons/chat.svg" alt="sound-icon" width="44px" height="44px" class="mt-6"/>
                         <p class="mt-6">Comunicação aberta e constante</p>
@@ -162,7 +168,7 @@
                             Valorizamos a transparência e mantemos uma comunicação constante. Esteja sempre atualizado sobre o progresso do seu projeto.
                         </p>
                     </div>
-                    <div class="flex flex-col p-8 bg-generic-gray max-w-[330px] h-full justify-center items-center rounded-3xl" data-aos="fade-down"
+                    <div class="flex flex-col p-8 bg-primary-bg-dark max-w-[330px] h-full justify-center items-center rounded-3xl" data-aos="fade-down"
                     data-aos-anchor-placement="top-center" data-aos-duration="2000" data-aos-once="true">
                         <img src="./assets/icons/sound.svg" alt="sound-icon" width="44px" height="44px" class="mt-6"/>
                         <p class="mt-6">Design único e tecnologia própria</p>
@@ -184,11 +190,11 @@
                 <p class="md:w-[420px] pt-8 pb-10 text-center text-generic-gray-lighter text-wrap">
                 Descubra como podemos impulsionar o seu negócio. Conheça mais sobre nossos serviços.
                 </p>
-                <div class=" text-generic-gray-lighter flex gap-3 rounded-3xl p-3 bg-generic-gray">
-                    <button class="focus:text-white selection:ease-out first:text-white focus-within:text-generic-gray-lighter active:scale-95">Todos</button>
-                    <button class="focus:text-white selection:ease-out active:scale-95">Tecnologia</button>
-                    <button class="focus:text-white selection:ease-out active:scale-95">Design</button>
-                    <button class="focus:text-white selection:ease-out active:scale-95">Outros</button>
+                <div class=" text-generic-gray-lighter flex gap-3 rounded-3xl py-2 px-6 bg-generic-gray text-sm">
+                    <button class="focus:text-white selection:ease-out first:text-white focus-within:text-generic-gray-lighter active:scale-95 m-auto">Todos</button>
+                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto">Tecnologia</button>
+                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto">Design</button>
+                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto">Outros</button>
              </div>
             
             <div class="flex flex-wrap items-center justify-between gap-6 mt-16 max-w-[1200px] w-full" data-aos="fade-down"
