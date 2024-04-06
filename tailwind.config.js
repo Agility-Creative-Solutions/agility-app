@@ -5,14 +5,13 @@ module.exports = {
     extend: {},
     colors: {
       'primary': '#BC01FD',
-      'primary-lighter': "A95FE3",
-      'secondary-purple-dark': '#2B2539',
-      'generic-dark-1': '#313131',
-      'generic-dark-2': '#242424',
-      'generic-purple-dark': '#262132',
+      'primary-lighter': 'A95FE3',
+      'primary-bg-dark-lighter': '#313131',
+      'primary-bg-dark': '#242424',
+      'primary-bg-darkness': '#1C1C1C',
       'generic-gray' : '#322E3C',
-      'generic-gray-lighter' : "#CBCBCB",
-      'white': "#FFFFFF"
+      'generic-gray-lighter' : '#CBCBCB',
+      'white': '#FFFFFF',
     }
   },
   plugins: [],
