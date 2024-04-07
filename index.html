@@ -15,10 +15,10 @@
 <body class=" from-primary-bg-dark-lighter to-primary-bg-darkness bg-gradient-to-r max-w-6xl text-white w-full h-full flex flex-col items-center space-y-32 container m-auto px-4" >
         <!-- HEADER -->
         <div class="flex fixed z-50 bg-gradient-to-r from-primary-bg-darkness to-primary-bg-dark-lighter top-0 py-6 h-26 items-center min-w-[100vw]">
-            <div class="flex m-auto w-full max-w-6xl justify-between">
-                <div class="flex gap-4 items-center text-white">
-                    <img width="44px" height="38px" src="./assets/images/logo.svg" />
-                    <img width="135px" height="40px" src="./assets/images/logoname.svg" />
+            <div class="flex m-auto w-full max-w-6xl justify-between z-50">
+                <div class="flex gap-4 items-center text-white z-50">
+                    <img width="44px" height="38px" src="./assets/images/logo.svg" class="z-50" />
+                    <img width="135px" height="40px" src="./assets/images/logoname.svg" class="z-50" />
                 </div> 
                 <div class="my-auto h-full">
                     <div id="normal-menu" class="md:flex hidden gap-10 items-center justify-center m-auto">
@@ -43,7 +43,7 @@
             
         </div>
         <!-- HOME -->
-        <div id="Home" class="w-full flex flex-wrap gap-4 justify-between items-center" data-aos="fade-down"
+        <div id="Home" class="w-full flex flex-wrap gap-4 justify-between items-center relative" data-aos="fade-down"
         data-aos-anchor-placement="top-center" data-aos-once="true">
             <div class="space-y-2 mt-32">
                 <h1 class=" text-white titles">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
@@ -64,9 +64,9 @@
             </div>
         </div>
         <!-- Sobre a Agility -->
-        <div id="About-us" class="flex flex-wrap w-full items-center justify-between" data-aos="fade-down"
+        <div id="About-us" class="flex flex-wrap w-full items-center justify-between relative" data-aos="fade-down"
         data-aos-anchor-placement="top-center" data-aos-once="true" data-aos-offset="-200">
-            <div class="bg-primary-bg-dark rounded-3xl w-[340px] h-[340px] md:w-[450px] md:h-[500px] flex justify-center items-center">
+            <div class="bg-primary-bg-dark rounded-3xl z-50 w-[340px] h-[340px] md:w-[450px] md:h-[500px] flex justify-center items-center">
             </div>
             <div class="flex flex-col max-w-xl">
                 <span class="rounded-3xl mb-4 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter max-w-36 flex justify-center">
@@ -100,6 +100,7 @@
                     <button class="text-primary active:scale-95">Nossos projetos</button>
                 </div>
             </div>
+            <img src="./assets//images/herologo.svg" alt="Hero Logo" width="400px" height="370px" class="absolute -left-28 -top-28 z-0">
         </div>
         <!-- SERVICES -->
             <div class="flex flex-wrap gap-10 justify-between w-full" data-aos="fade-down"
@@ -129,7 +130,10 @@
                         </p>
                     </div>
                     <div class="sm:grid-cols-1 max-w-64">
-                        <h4 class="text-generic-gray-lighter">Social</h4>
+                        <div class="flex justify-between items-center w-full">
+                            <h4 class="text-generic-gray-lighter">Social</h4>
+                            <span class="px-2 py-1 mb-2 flex rounded-3xl text-xs gap-2 bg-primary text-white"><p>indicação Agility</p> <img src="./assets/icons/agilityShield.svg" alt="Agility Shield" width="14px" height="14px"></span>
+                        </div>
                         <span class="flex items-center absolute h-[1px] w-full max-w-60 pr-8 bg-generic-gray rounded-full"><span class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
                         <p class="text-lg p-1">Redes Sociais e Marketing</p>
                         <p class="text-sm">Descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
@@ -144,9 +148,10 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center mt-40" data-aos="fade-down" data-aos-offset="-200"
+            <div class="flex flex-col items-center mt-40 relative" data-aos="fade-down" data-aos-offset="-200"
             data-aos-anchor-placement="top-center" data-aos-once="true">
                 <div class="flex items-center flex-col w-full">
+                    <img src="./assets/images/logogrey.svg" alt="Logo Image" width="155px" height="134px" class="absolute left-0 top-0 z-0">
                     <h3>POR QUÊ ESCOLHER A <strong class="text-primary">AGILITY?</strong></h3>
                     <p class="p-4 text-generic-gray-lighter mb-8 md:max-w-[430px]">Descubra como podemos impulsionar o seu negócio. Conheça mais sobre nossos serviços.
                     </p>
@@ -180,51 +185,51 @@
                 </div>
             </div>           
         <!-- PROJECTS -->
-        <div id="Projects" class="flex flex-col items-center justify-between w-full" data-aos="fade-down"
+        <div id="Projects" class="flex flex-col items-center justify-between w-full relative z-40" data-aos="fade-down"
         data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
-                <a class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter max-w-36 flex justify-center">
+                <a class="rounded-3xl mb-10 py-1 px-2 text-sm bg-generic-gray text-generic-gray-lighter max-w-36 flex justify-center z-50">
                 Nosso portfolio
                 </a>
-                <h2 class=" md:max-w-[520px] text-center text-wrap p-4">
+                <h2 class=" md:max-w-[520px] text-center text-wrap p-4 z-40">
                 Projetos que fizeram a <strong class="text-primary">diferença</strong> na nossa história</h2>
-                <p class="md:w-[420px] pt-8 pb-10 text-center text-generic-gray-lighter text-wrap">
+                <p class="md:w-[420px] pt-8 pb-10 text-center text-generic-gray-lighter text-wrap z-50">
                 Descubra como podemos impulsionar o seu negócio. Conheça mais sobre nossos serviços.
                 </p>
-                <div class=" text-generic-gray-lighter flex gap-3 rounded-3xl py-2 px-6 bg-generic-gray text-sm">
-                    <button class="focus:text-white selection:ease-out first:text-white focus-within:text-generic-gray-lighter active:scale-95 m-auto">Todos</button>
-                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto">Tecnologia</button>
-                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto">Design</button>
-                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto">Outros</button>
+                <div class=" text-generic-gray-lighter flex gap-3 rounded-3xl py-2 px-6 bg-generic-gray text-sm z-50">
+                    <button class="focus:text-white selection:ease-out first:text-white focus-within:text-generic-gray-lighter active:scale-95 m-auto z-50">Todos</button>
+                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto z-50">Tecnologia</button>
+                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto z-50">Design</button>
+                    <button class="focus:text-white selection:ease-out active:scale-95 m-auto z-50">Outros</button>
              </div>
-            
+             <img src="./assets/images/logogrey.svg" alt="Logo Image" width="360px" height="320px" class="absolute -right-32 top-0 z-0">
             <div class="flex flex-wrap items-center justify-between gap-6 mt-16 max-w-[1200px] w-full" data-aos="fade-down"
             data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
-                <div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
+                <div class="flex flex-col z-40 items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
                     <div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
                     <p>Exemplo projeto 1</p>
                     <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div class="flex flex-col items-center mt-14 m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
+                <div class="flex flex-col z-40 items-center mt-14 m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
                     <div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
                     <p>Exemplo projeto 1</p>
                     <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
+                <div class="flex flex-col z-40 items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
                     <div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
                     <p>Exemplo projeto 1</p>
                     <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
+                <div class="flex flex-col z-40 items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
                     <div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
                     <p>Exemplo projeto 1</p>
                     <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div class="flex flex-col items-center mt-14 m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
+                <div class="flex flex-col z-40 items-center mt-14 m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
                     <div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
                     <p>Exemplo projeto 1</p>
                     <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
                 </div>
-                <div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
+                <div class="flex flex-col z-40 items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
                     <div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
                     <p>Exemplo projeto 1</p>
                     <a target="_blank" class="text-gray-300 cursor-pointer text-generic-gray-lighter">Site</a>
