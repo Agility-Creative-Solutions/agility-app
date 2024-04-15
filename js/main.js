@@ -22,6 +22,40 @@ menuButton.addEventListener("click", function () {
   }
 });
 
+var links = document.getElementsByTagName("a");
+for (var i = 0; i < links.length; i++) {
+
+  if (links[i].getAttribute("href").startsWith("#")) {
+    links[i].addEventListener("click", function () {
+      
+    });
+  }
+}
+menuButton.addEventListener("click", function () {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+});
+
+
+
+
+
+function handlePortfolioClick(portfolioCategoryId) {
+  var portfolioItems = document.querySelectorAll(".portfolio-item");
+  portfolioItems.forEach(function (portfolioItem) {
+    var portfolioItemCategory = portfolioItem.getAttribute("data-portfolio-category");
+    if (portfolioItemCategory === portfolioCategoryId || portfolioCategoryId === "todos") {
+      portfolioItem.style.display = "block";
+    } else {
+      portfolioItem.style.display = "none";
+    }
+  });
+}
+
+
 var typed = new Typed('#randomTextElement', {
   strings: ['criativa', 'rápida', 'inteligente', 'fácil'],
   typeSpeed: 50,

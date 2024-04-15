@@ -3,6 +3,11 @@ body {
   overflow-x: hidden
 }
 
+body, html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
 h1 {
   font-size: 64px;
   line-height: 1;

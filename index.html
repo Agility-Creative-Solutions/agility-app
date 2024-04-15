@@ -40,8 +40,7 @@
 <body
 	class="from-primary-bg-dark-lighter to-primary-bg-darkness bg-gradient-to-r max-w-6xl text-white w-full h-full flex flex-col items-center container m-auto px-4">
 	<!-- HEADER -->
-	<div
-		class="flex fixed z-50 bg-gradient-to-r from-primary-bg-darkness to-primary-bg-dark-lighter top-0 py-6 h-26 items-center min-w-[100vw]">
+	<div class="flex fixed z-50 bg-primary-bg-darkness top-0 py-4 h-26 items-center min-w-[100vw] shadow-md">
 		<div class="flex m-auto w-full max-w-6xl justify-between">
 			<div class="flex gap-4 items-center text-white">
 				<img width="44px" height="38px" src="./assets/images/logo.svg" />
@@ -49,29 +48,28 @@
 			</div>
 			<div class="my-auto h-full">
 				<div id="normal-menu" class="md:flex hidden gap-10 items-center justify-center m-auto">
-					<a href="#Home" target="_self">Home</a>
-					<a href="#About-us" target="_self">Sobre a Agility</a>
-					<a href="#Projects" target="_self">Projetos</a>
-					<a href="#Contact-us" target="_self">Falar com a gente</a>
+					<a class="hover:font-bold" href="#Home" target="_self">Home</a>
+					<a class="hover:font-bold" href="#SobreNos" target="_self">Sobre a Agility</a>
+					<a class="hover:font-bold" href="#Portfolio" target="_self">Projetos</a>
+					<a class="hover:font-bold" href="#FaleConosco" target="_self">Falar com a gente</a>
 				</div>
 				<button id="menu-button" class="visible md:hidden mr-6">&#9776;</button>
 				<div id="menu-burguer"
 					class="hidden absolute md:hidden top-12 right-[40px] p-5 md:p-0 rounded-3xl primary-bg-dark border-2">
 					<ul class="md:hidden shadow-md">
-						<li><a href="#Home">Home</a></li>
-						<li><a href="#About-us">Sobre a Agility</a></li>
-						<li><a href="#Projects">Projetos</a></li>
-						<li><a href="#Contact-us">Falar com a gente</a></li>
+						<li><a class="hover:font-bold" href="#Home">Home</a></li>
+						<li><a class="hover:font-bold" href="#SobreNos">Sobre a Agility</a></li>
+						<li><a class="hover:font-bold" href="#Portfolio">Projetos</a></li>
+						<li><a class="hover:font-bold" href="#FaleConosco">Falar com a gente</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class=" space-y-24">
-
+	<div class=" space-y-40">
 		<!-- HOME -->
-		<div id="Home" class="w-full gap-2 justify-between items-center py-32 pt-56 grid grid-cols-2
+		<div id="Home" class="w-full gap-2 justify-between items-center pt-56 grid grid-cols-2
 		" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-once="true">
 			<div class="py-8 gap-4 flex flex-col">
 				<h1 class="font-bold text-white text-5xl">NÓS SOMOS <span class="text-primary">AGILITY</span></h1>
@@ -83,7 +81,7 @@
 					</p>
 				</div>
 				<div>
-					<button class="bg-primary px-8 py-2 pt-3 rounded-full font-bold">CONHEÇA MAIS</button>
+					<a class="bg-primary px-8 py-2 pt-3 rounded-full font-bold" href="#SobreNos">CONHEÇA MAIS</a>
 				</div>
 			</div>
 			<div>
@@ -91,51 +89,60 @@
 			</div>
 		</div>
 		<!-- Sobre a Agility -->
-		<div id="SobreNos" class="flex flex-wrap w-full items-center justify-between" data-aos="fade-down"
+		<div id="SobreNos" class="flex flex-wrap w-full items-center justify-between mb-10" data-aos="fade-down"
 			data-aos-anchor-placement="top-center" data-aos-once="true" data-aos-offset="-300" data-aos-delay="300">
 			<div
 				class="bg-primary-bg-dark rounded-3xl w-[340px] h-[340px] md:w-[450px] md:h-[500px] flex justify-center items-center">
 			</div>
 			<div class="flex flex-col max-w-xl">
-				<a href="#SobreNos" class="rounded-3xl mb-10 py-2 px-4 text-sm bg-generic-gray leading-normal w-fit font-bold">
-					Conheça a Agility
+				<a href="#SobreNos"
+					class="rounded-3xl mb-10 py-2 px-4 pt-3 text-sm bg-generic-gray leading-3 w-fit font-bold d-flex">
+					Sobre a Agility
 				</a>
-				<h2 class="mb-4">Acreditamos em <br>
-					<strong>Colaboração & Criatividade</strong>
+				<h2 class="mb-4 text-3xl font-bold">Acreditamos em <strong>Colaboração & Criatividade</strong>
 				</h2>
-				<p>Desde o início, a <strong class="text-primary">agility creativa</strong> tem sido apaixonada por transformar
-					visões em experiências digitais excepcionais. Nossa missão é proporcionar soluções digitais inovadoras que
-					impulsionem o sucesso dos nossos clientes.
+				<p>Desde o início, nosso time na <strong class="text-primary">Agility Creativa</strong> utiliza a criatividade
+					para desenvolver soluções que não apenas atendem, mas superam as expectativas dos nossos clientes.
+					Impulsionados pela paixão em inovar, entregamos projetos que definem padrões no mercado digital.
 				</p>
 				<div class="grid grid-cols-2 font-semibold my-10 gap-x-6 gap-y-10">
 					<div class="grid-cols-1 flex items-center gap-4">
-						<span class="bg-primary rounded-full w-5 h-5"></span>
-						Transparência
+						<img src="./assets/images/check-circle.svg" class="bg-primary rounded-full w-5 h-5" />
+						<p class="pt-2">
+							Transparência
+						</p>
 					</div>
 					<div class="grid-cols-1 flex items-center gap-4">
-						<span class="bg-primary rounded-full w-5 h-5"></span>
-						Trabalho em equipe
+						<img src="./assets/images/check-circle.svg" class="bg-primary rounded-full w-5 h-5" />
+						<p class="pt-2">
+							Trabalho em equipe
+						</p>
 					</div>
 					<div class="grid-cols-2 flex items-center gap-4">
-						<span class="bg-primary rounded-full w-5 h-5"></span>
-						Comprometimento
+						<img src="./assets/images/check-circle.svg" class="bg-primary rounded-full w-5 h-5" />
+						<p class="pt-2">
+							Comprometimento
+						</p>
 					</div>
 					<div class="grid-cols-2 flex items-center gap-4">
-						<span class="bg-primary rounded-full w-5 h-5"></span>
-						Honestidade
+						<img src="./assets/images/check-circle.svg" class="bg-primary rounded-full w-5 h-5" />
+						<p class="pt-2">
+							Honestidade
+						</p>
 					</div>
 				</div>
 				<div class="flex items-center gap-10">
-					<button class="bg-primary px-8 py-2 rounded-full">Quero começar um projeto!</button>
-					<button class="text-primary active:scale-95">Nossos projetos</button>
+					<a class="bg-primary px-8 py-2 pt-3 rounded-full font-bold" href="#FaleConosco">Quero começar um projeto!</a>
+					<button class="text-primary active:scale-105 font-bold">Nossos projetos</button>
 				</div>
 			</div>
 		</div>
 		<!-- SERVICES -->
-		<div class="flex flex-wrap gap-10 justify-between w-full" data-aos="fade-down"
+		<div class="flex flex-wrap gap-10 justify-between w-full mt-24" data-aos="fade-down"
 			data-aos-anchor-placement="top-center" id="Servicos" data-aos-once="true" data-aos-offset="-200">
 			<div class="flex-col mb-20 md:mb-0 flex">
-				<a href="#Servicos" class="rounded-3xl mb-10 py-2 px-4 text-sm bg-generic-gray leading-normal w-fit font-bold">
+				<a href="#Servicos"
+					class="rounded-3xl mb-10 py-2 px-4 pt-3 text-sm bg-generic-gray leading-normal w-fit font-bold">
 					Nossos serviços
 				</a>
 				<h2 class="text-3xl font-bold">Entregamos a solução <p class="text-primary">mais eficiente</p> para seu projeto!
@@ -143,46 +150,50 @@
 				<p class="mt-4 mb-12">Descubra como podemos impulsionar o seu negócio. <br> conheça mais sobre nossos
 					serviços.
 				</p>
-				<a href="#Projects" class="px-10 py-3 bg-primary rounded-3xl font-bold w-fit">Veja nosso portfólio</a>
+				<a href="#Portfolio" class="px-10 py-3 bg-primary rounded-3xl font-bold w-fit">Veja nosso portfólio</a>
 			</div>
 			<div class="flex gap-6 flex-wrap sm:grid sm:grid-cols-2 md:gap-x-12 items-center justify-center"
 				data-aos="fade-left" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000">
 				<div class="sm:grid-cols-1 max-w-64 gap-1 flex flex-col">
-					<h4 class="">Tecnologia</h4>
+					<h4 class="text-xl">Tecnologia</h4>
 					<span class="flex items-center relative h-[1px] w-full max-w-60 pr-8 bg-generic-gray rounded-full">
 						<span class="absolute left-0 bg-primary h-[1px] w-10"></span>
 					</span>
-					<p class="text-lg mt-3">App, Sites, Bots, AI e mais</p>
-					<p class="text-sm">Descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+					<p class="text-lg mt-4">App, Sites, Bots, AI e mais</p>
+					<p class="text-sm">Explore nossos serviços em desenvolvimento de apps, sites, bots e inteligência artificial.
+						Elevamos sua presença digital com tecnologia de ponta.
 					</p>
 				</div>
 				<div class="sm:grid-cols-2 max-w-64">
-					<h4 class="">Marca</h4>
+					<h4 class="text-xl">Marca</h4>
 					<span class="flex items-center absolute h-[1px] w-full max-w-60 pr-8 bg-generic-gray rounded-full"><span
 							class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
-					<p class="text-lg mt-3">Design e identidade</p>
-					<p class="text-sm">Descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+					<p class="text-lg mt-4">Design e identidade</p>
+					<p class="text-sm">Criamos identidades visuais que capturam a essência de sua marca, destacando você no
+						mercado. Do logotipo ao design completo, cuidamos da sua marca.
 					</p>
 				</div>
 				<div class="sm:grid-cols-1 max-w-64">
-					<h4 class="">Social</h4>
+					<h4 class="text-xl">Social</h4>
 					<span class="flex items-center absolute h-[1px] w-full max-w-60 pr-8 bg-generic-gray rounded-full"><span
 							class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
-					<p class="text-lg mt-3">Redes Sociais e Marketing</p>
-					<p class="text-sm">Descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+					<p class="text-lg mt-4">Redes Sociais e Marketing</p>
+					<p class="text-sm">Amplie seu alcance com estratégias de redes sociais e marketing digital eficazes.
+						Conecte-se ao seu público e aumente o engajamento de forma criativa.
 					</p>
 				</div>
 				<div class="sm:grid-cols-2 max-w-64">
-					<h4 class="">Consultoria & Suporte</h4>
+					<h4 class="text-xl">Consultoria & Suporte</h4>
 					<span class="flex items-center absolute h-[1px] w-full max-w-60 pr-8 bg-generic-gray rounded-full"><span
 							class="absolute left-0 bg-primary h-[1px] w-10"></span></span>
-					<p class="text-lg mt-3">Agilidade em Tecnologia</p>
-					<p class="text-sm">Descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos serviços.
+					<p class="text-lg mt-4">Agilidade em Tecnologia</p>
+					<p class="text-sm">Oferecemos consultoria e suporte em tecnologia para otimizar sua infraestrutura de TI.
+						Nossos especialistas implementam soluções eficientes ao lado da sua equipe.
 					</p>
 				</div>
 			</div>
 		</div>
-		<div class="flex flex-col items-center mt-40" data-aos="fade-down" data-aos-offset="-200"
+		<div class="flex flex-col items-center mt-54" data-aos="fade-down" data-aos-offset="-200"
 			data-aos-anchor-placement="top-center" data-aos-once="true">
 			<div class="flex items-center flex-col w-full">
 				<h3 class="text-3xl">POR QUÊ ESCOLHER A <strong class="text-primary">AGILITY?</strong></h3>
@@ -226,7 +237,7 @@
 		<!-- PROJECTS -->
 		<div id="Portfolio" class="flex flex-col items-center justify-between w-full" data-aos="fade-down"
 			data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
-			<a class="rounded-3xl mb-10 py-2 px-4 text-sm bg-generic-gray leading-normal" href="#Portfolio">
+			<a class="rounded-3xl mb-10 py-2 px-4 pt-3 text-sm bg-generic-gray leading-normal" href="#Portfolio">
 				Nosso Portfolio
 			</a>
 			<h2 class=" md:max-w-[520px] text-center text-wrap text-3xl font-bold">
@@ -236,52 +247,60 @@
 			</p>
 			<div class="flex gap-3 rounded-3xl py-2 px-6 bg-generic-gray text-sm">
 				<button
-					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out first:text-white focus-within: active:scale-95 m-auto">Todos</button>
+					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out first:text-white focus-within: active:scale-95 m-auto"
+					onclick="handlePortfolioClick('todos')">Todos</button>
 				<button
-					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto">Tecnologia</button>
+					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto"
+					onclick="handlePortfolioClick('tecnologia')">Tecnologia</button>
 				<button
-					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto">Design</button>
+					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto"
+					onclick="handlePortfolioClick('design')">Design</button>
 				<button
-					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto">Outros</button>
+					class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto"
+					onclick="handlePortfolioClick('outros')">Outros</button>
 			</div>
 
-			<div class="flex flex-wrap items-center justify-between gap-6 mt-16 max-w-[1200px] w-full" data-aos="fade-down"
+			<div class="flex flex-wrap items-center gap-6 mt-16 max-w-[1200px] w-full" data-aos="fade-up"
 				data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
-				<div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
-					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
-					<p>Exemplo projeto 1</p>
-					<a target="_blank" class="text-gray-300 cursor-pointer ">Site</a>
+				<div class="portfolio-item flex flex-col items-center m-6 p-3 cursor-pointer"
+					data-portfolio-category="tecnologia">
+					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center mb-4"></div>
+					<p class="font-bold text-md w-3/4 mx-auto text-center">EasyToLive</p>
+					<div class="font-italic cursor-pointer text-center mx-auto">Aplicativo Web</div>
 				</div>
-				<div class="flex flex-col items-center mt-14 m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
-					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
-					<p>Exemplo projeto 1</p>
-					<a target="_blank" class="text-gray-300 cursor-pointer ">Site</a>
+				<div class="portfolio-item flex flex-col items-center m-6 p-3 cursor-pointer"
+					data-portfolio-category="tecnologia">
+					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center mb-4"></div>
+					<p class="font-bold text-md w-3/4 mx-auto text-center">Academia Cearense de Economia</p>
+					<div class="font-italic cursor-pointer text-center mx-auto">Site</div>
 				</div>
-				<div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
-					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
-					<p>Exemplo projeto 1</p>
-					<a target="_blank" class="text-gray-300 cursor-pointer ">Site</a>
+				<div class="portfolio-item flex flex-col items-center m-6 p-3 cursor-pointer"
+					data-portfolio-category="tecnologia">
+					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center mb-4"></div>
+					<p class="font-bold text-md w-3/4 mx-auto text-center">DeÔnibus</p>
+					<div class="font-italic cursor-pointer text-center mx-auto">Site</div>
 				</div>
-				<div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
-					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
-					<p>Exemplo projeto 1</p>
-					<a target="_blank" class="text-gray-300 cursor-pointer ">Site</a>
+				<div class="portfolio-item flex flex-col items-center m-6 p-3 cursor-pointer"
+					data-portfolio-category="tecnologia">
+					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center mb-4"></div>
+					<p class="font-bold text-md w-3/4 mx-auto text-center">Scrummy Poker</p>
+					<div class="font-italic cursor-pointer text-center mx-auto">Aplicativo Web</div>
 				</div>
-				<div class="flex flex-col items-center mt-14 m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
-					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
-					<p>Exemplo projeto 1</p>
-					<a target="_blank" class="text-gray-300 cursor-pointer ">Site</a>
+				<div class="portfolio-item flex flex-col items-center m-6 p-3 cursor-pointer" data-portfolio-category="design">
+					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center mb-4"></div>
+					<p class="font-bold text-md w-3/4 mx-auto text-center mx-auto">Agility Creative</p>
+					<div class="font-italic cursor-pointer text-center">Marca</div>
 				</div>
-				<div class="flex flex-col items-center m-6 p-3 hover:translate-y-[-5px] cursor-pointer">
-					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center"></div>
-					<p>Exemplo projeto 1</p>
-					<a target="_blank" class="text-gray-300 cursor-pointer ">Site</a>
+				<div class="portfolio-item flex flex-col items-center m-6 p-3 cursor-pointer" data-portfolio-category="outros">
+					<div class="bg-primary rounded-3xl h-[300px] w-[240px] text-center mb-4"></div>
+					<p class="font-bold text-md w-3/4 mx-auto text-center">DynoTest Performance</p>
+					<div class="font-italic cursor-pointer text-center mx-auto">Redes Sociais</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- FEEDBACK -->
-		<div id="Feedback" class="flex flex-wrap 2xl:grid 2xl:grid-cols-2 justify-between gap-4 w-full" data-aos="fade-down"
+		<!-- <div id="Feedback" class="flex flex-wrap 2xl:grid 2xl:grid-cols-2 justify-between gap-4 w-full" data-aos="fade-down"
 			data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
 			<div class="w-full flex flex-col pr-64">
 				<a href="#Feeedback" class="rounded-3xl mb-10 py-2 px-4 text-sm bg-generic-gray leading-normal w-fit font-bold">
@@ -312,68 +331,51 @@
 				<div class="rounded-2xl m-auto  p-4 flex flex-col justify-around" data-aos="fade-down"
 					data-aos-anchor-placement="top-center" data-aos-once="true" data-aos-delay="200" data-aos-offset="-200">
 					<img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
-					<p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos
-						serviços.
-					</p>
+					<p class="flex-center p-4 mb-6">Serviço bem feito, site construído com rapidez e qualidade.
 
-					<span class="flex gap-2">
-						<div class="rounded-full w-10 h-10 bg-white"></div>
-						<div>
-							<p class="font-semibold">Leandro Pontes</p>
-							<p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
-						</div>
-					</span>
+						<span class="flex gap-2">
+							<div class="rounded-full w-10 h-10 bg-white"></div>
+							<div>
+								<p class="font-semibold">Leandro Pontes</p>
+								<p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
+							</div>
+						</span>
 				</div>
 				<div class="rounded-2xl m-auto mt-12  p-4 flex flex-col justify-around" data-aos="fade-down"
 					data-aos-anchor-placement="top-center" data-aos-once="true" data-aos-delay="300" data-aos-offset="-400">
 					<img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
-					<p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos
-						serviços.
+					<p class="flex-center p-4 mb-6">Meu site foi rapidamente atualizado com interface nova e uma funcionalidade de
+						falar por Whatsapp que me fez ter muito sucesso no primeir contato com o cliente.
 					</p>
 
 					<span class="flex gap-2">
 						<div class="rounded-full w-10 h-10 bg-white"></div>
 						<div>
-							<p class="font-semibold">Leandro Pontes</p>
-							<p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
-						</div>
-					</span>
-				</div>
-				<div class="rounded-2xl m-auto  p-4 flex flex-col justify-around" data-aos="fade-down"
-					data-aos-anchor-placement="top-center" data-aos-once="true" data-aos-delay="400" data-aos-offset="-400">
-					<img src="./assets/icons/quotation-mark.svg" alt="icon" width="74px" height="57px">
-					<p class="flex-center p-4 mb-6">descubra como podemos impulsionar o seu negócio. conheça mais sobre nossos
-						serviços.
-					</p>
-
-					<span class="flex gap-2">
-						<div class="rounded-full w-10 h-10 bg-white"></div>
-						<div>
-							<p class="font-semibold">Leandro Pontes</p>
-							<p class="text-generic-gray-lighter text-xs">Agilock Rastreamento</p>
+							<p class="font-semibold">Joshua Albuquerque</p>
+							<p class="text-generic-gray-lighter text-xs">DynoTest Performance</p>
 						</div>
 					</span>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- CONTACT US -->
 		<div id="FaleConosco" class="flex flex-wrap gap-20 w-full grid-cols-2 justify-between" data-aos="fade-down"
 			data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
 			<div class="flex flex-col">
 				<a href="#FaleConosco"
-					class="flex rounded-3xl mb-10 py-2 px-4 text-sm bg-generic-gray leading-normal w-fit font-bold">
+					class="flex rounded-3xl mb-10 py-2 pt-3 px-4 text-sm bg-generic-gray leading-normal w-fit font-bold">
 					Entre em contato
 				</a>
 				<h2 class="text-4xl">Quer falar com a gente? <br>
 					<strong class="text-primary">manda um OI!</strong>
 				</h2>
 				<div class="flex flex-col gap-4 mt-8 w-full text-start">
-					<a href="mailto:hi@agilitycreative.com" class="flex gap-3"> <img src="./assets/icons/email.svg"
-							alt="email-icon" width="24px" height="24px">
+					<a href="mailto:hi@agilitycreative.com" class="flex gap-3 items-center">
+						<img src="./assets/icons/email.svg" alt="email-icon" width="24px" height="24px">
 						hi@agilitycreative.com</a>
-					<a href="https://instagram.com/agilitycreative" target="_blank" class="flex gap-3"> <img
-							src="./assets/icons/instagram.svg" alt="email-icon" width="24px" height="24px">
+					<a href="https://instagram.com/agilitycreative" target="_blank" class="items-center flex gap-3">
+						<img src="./assets/icons/instagram.svg" alt="email-icon" width="24px" height="24px">
 						@agilitycreative</a>
 				</div>
 			</div>
@@ -406,7 +408,7 @@
 
 	<!-- FOOTER -->
 	<div class="flex justify-around max-w-none min-w-[100vw] bg-primary-bg-darkness h-64 items-center w-full mt-32"
-		data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-once="true"
+		data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-once="true"
 		data-aos-delay="100">
 		<div class="gap-3 text-xs flex flex-col items-start">
 			<p class="text-md mb-2 text-white font-bold">Nosso site</p>
