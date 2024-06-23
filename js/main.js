@@ -27,7 +27,7 @@ for (var i = 0; i < links.length; i++) {
 
   if (links[i].getAttribute("href").startsWith("#")) {
     links[i].addEventListener("click", function () {
-      
+
     });
   }
 }
@@ -46,9 +46,10 @@ menuButton.addEventListener("click", function () {
 function handlePortfolioClick(portfolioCategoryId) {
   var portfolioItems = document.querySelectorAll(".portfolio-item");
   portfolioItems.forEach(function (portfolioItem) {
-    var portfolioItemCategory = portfolioItem.getAttribute("data-portfolio-category");
-    if (portfolioItemCategory === portfolioCategoryId || portfolioCategoryId === "todos") {
-      portfolioItem.style.display = "block";
+    var portfolioItemCategory = portfolioItem.getAttribute("data-portfolio-category").split(',');
+
+    if (portfolioItemCategory.includes(portfolioCategoryId) || portfolioCategoryId === "todos") {
+      portfolioItem.style.display = "flex";
     } else {
       portfolioItem.style.display = "none";
     }
