@@ -12,32 +12,11 @@
 		rel="stylesheet">
 	<title>Agility Creative - Soluções Digitais Inteligentes</title>
 	<link rel="icon" href="./agility_ico.ico" type="image/x-icon">
-	<script src="https://cdn.tailwindcss.com"></script>
 
-	<script>
-		tailwind.config = {
-			content: ["./**/*.{html,js}"],
-			theme: {
-				extend: {},
-				colors: {
-					'primary': '#BC01FD',
-					'primary-dark': '#680C88',
-					'primary-lighter': 'A95FE3',
-					'primary-bg-dark-lighter': '#121212',
-					'primary-bg-dark': '#242424',
-					'primary-bg-darkness': '#080808',
-					'black': '#000',
-					'generic-gray': '#373737',
-					'generic-gray-lighter': '#CBCBCB',
-					'white': '#FFFFFF',
-				}
-			},
-			plugins: [],
-		}
-	</script>
 
 	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<script src="./js/tailwind.3.4.4.min.js"></script>
+
 </head>
 
 <body class="from-primary-bg-dark-lighter to-black bg-gradient-to-r">
@@ -53,17 +32,23 @@
 				<div class="my-auto h-full">
 					<div id="normal-menu" class="md:flex hidden gap-10 items-center justify-center m-auto">
 						<a class="hover:font-bold" href="#Home" target="_self">Home</a>
-						<a class="hover:font-bold" href="#SobreNos" target="_self">Sobre a Agility</a>
+						<a class="hover:font-bold" href="#Servicos" target="_self">Sobre a Agility</a>
 						<a class="hover:font-bold" href="#Portfolio" target="_self">Projetos</a>
 						<a class="hover:font-bold" href="#FaleConosco" target="_self">Falar com a gente</a>
 					</div>
+
 					<button id="menu-button" class="visible md:hidden mr-6">&#9776;</button>
 					<div id="menu-burguer"
-						class="hidden absolute md:hidden top-12 right-[40px] p-5 md:p-0 rounded-3xl primary-bg-dark border-2">
-						<ul class="md:hidden shadow-md">
+						class="absolute top-0 left-0 p-5 md:p-0 rounded-3xl bg-primary-bg-darkness w-full h-screen flex flex-col animate__animated hidden">
+
+						<div class="flex gap-4 items-center text-white px-5 py-3 space-between">
+							<img width="44px" height="38px" src="./assets/images/logo_purple.svg" />
+							<button id="close-button" class="absolute right-10 top-10 md:hidden text-2xl">&times;</button>
+						</div>
+						<ul class="md:hidden shadow-md text-center mt-10 flex gap-5 flex-col">
 							<li><a class="hover:font-bold" href="#Home">Home</a></li>
-							<li><a class="hover:font-bold" href="#SobreNos">Sobre a Agility</a></li>
-							<li><a class="hover:font-bold" href="#Portfolio">Projetos</a></li>
+							<li><a class="hover:font-bold" href="#Servicos">Sobre a Agility</a></li>
+							<li><a class="hover:font-bold" href="#Portfolio">Projetos/Portfólio</a></li>
 							<li><a class="hover:font-bold" href="#FaleConosco">Falar com a gente</a></li>
 						</ul>
 					</div>
@@ -79,14 +64,14 @@
 						<h1 class="font-bold text-white text-5xl text-center md:text-left">SOMOS <span
 								class="text-primary">AGILITY</span></h1>
 						<div class="relative w-full">
-							<p class="font-medium text-2xl -mt-5 text-center md:text-left">Sua presença digital de forma <span
-									class="text-2xl font-medium text-primary">
+							<p class="font-medium text-2xl -mt-5 text-center px-4 sm:px-0 md:text-left">Sua presença digital de forma
+								<span class="text-2xl font-medium text-primary">
 									<span id="randomTextElement" class="w-32"></span>
 								</span>
 							</p>
 						</div>
 						<div class="mt-3 sm:mt-10 text-center md:text-left">
-							<a class="bg-primary-dark px-8 py-2 pt-3 rounded-full font-bold" href="#SobreNos">Conhecer a Agility</a>
+							<a class="bg-primary-dark px-8 py-2 pt-3 rounded-full font-bold" href="#Servicos">Conhecer a Agility</a>
 						</div>
 					</div>
 					<div class="flex-col col-span-12 md:col-span-5">
@@ -422,20 +407,46 @@
 			</div>
 		</div>
 
-		<!--Element Screen animation -->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
-
-		<!-- Type Animation -->
-		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-		<!-- MAIN JS - MUST BE LAST -->
-		<script src="./js/main.js"> </script>
 
 	</div>
 
+	<!--Element Screen animation -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: window.innerHeight * .3
+		});
+	</script>
+
+	<!-- Type Animation -->
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+	<!-- MAIN JS - MUST BE LAST -->
+	<script src="./js/main.min.js"> </script>
+
+
+	<script>
+		tailwind.config = {
+			content: ["./**/*.{html,js}"],
+			theme: {
+				extend: {},
+				colors: {
+					'primary': '#BC01FD',
+					'primary-dark': '#680C88',
+					'primary-lighter': 'A95FE3',
+					'primary-bg-dark-lighter': '#121212',
+					'primary-bg-dark': '#242424',
+					'primary-bg-darkness': '#080808',
+					'black': '#000',
+					'generic-gray': '#373737',
+					'generic-gray-lighter': '#CBCBCB',
+					'white': '#FFFFFF',
+				}
+			},
+			plugins: [],
+		}
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </body>
 
 </html>

@@ -11,30 +11,35 @@ function goToWhatsapp() {
   window.open(urlPath, "_blank").focus();
 }
 
-var menuButton = document.getElementById("menu-button");
-var menu = document.getElementById("menu-burguer");
+const menuButton = document.getElementById("menu-button");
+const closeMenuButton = document.getElementById("close-button");
+const menu = document.getElementById("menu-burguer");
+const menuLinks = menu.getElementsByTagName("a");
 
-menuButton.addEventListener("click", function () {
-  if (menu.style.display === "block") {
+function closeHamburgerMenu() {
+  menu.classList.remove("animate__fadeInDown");
+  menu.classList.add("animate__fadeOutUp", "animate__faster");
+  setTimeout(() => {
     menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
-});
-
-var links = document.getElementsByTagName("a");
-for (var i = 0; i < links.length; i++) {
-  if (links[i].getAttribute("href").startsWith("#")) {
-    links[i].addEventListener("click", function () {});
-  }
+  }, 350);
 }
-menuButton.addEventListener("click", function () {
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
-});
+
+function openHamburgerMenu() {
+  menu.classList.remove("animate__fadeOutUp", "hidden");
+  menu.classList.add("animate__fadeInDown", "animate__faster");
+  menu.style.display = "flex";
+}
+
+menuButton.addEventListener(
+  "click",
+  menu.style.display === "flex" ? closeHamburgerMenu : openHamburgerMenu
+);
+
+closeMenuButton.addEventListener("click", closeHamburgerMenu);
+
+for (let menuLink of menuLinks) {
+  menuLink.addEventListener("click", closeHamburgerMenu);
+}
 
 function handlePortfolioClick(portfolioCategoryId) {
   var countShowing = 0;
