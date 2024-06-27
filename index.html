@@ -37,6 +37,7 @@
 	</script>
 
 	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="from-primary-bg-dark-lighter to-black bg-gradient-to-r">
@@ -94,11 +95,11 @@
 				</div>
 
 			</div>
-		
+
 			<!-- SERVICES -->
-			<div id="Servicos" class="flex flex-wrap gap-4 md:gap-10 justify-between w-full mt-24 grid grid-cols-12"
-				>
-				<div class="flex-col mb-10 md:mb-20 md:mb-0 flex col-span-12 md:col-span-5 items-center text-center md:text-left md:items-start">
+			<div id="Servicos" class="flex flex-wrap gap-4 md:gap-10 justify-between w-full mt-24 grid grid-cols-12">
+				<div
+					class="flex-col mb-10 md:mb-20 md:mb-0 flex col-span-12 md:col-span-5 items-center text-center md:text-left md:items-start">
 					<a href="#Servicos"
 						class="rounded-3xl mb-10 py-2 px-4 pt-3 text-sm bg-generic-gray leading-normal w-fit font-bold">
 						Nossos serviços
@@ -155,8 +156,8 @@
 				</div>
 			</div>
 
-				<!-- PORTFOLIO -->
-				<div id="Portfolio" class="flex flex-col items-center justify-between w-full" data-aos="fade-down"
+			<!-- PORTFOLIO -->
+			<div id="Portfolio" class="flex flex-col items-center justify-between w-full" data-aos="fade-down"
 				data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
 				<a class="rounded-3xl mb-10 py-2 px-4 pt-3 text-sm bg-generic-gray leading-normal" href="#Portfolio">
 					Nosso Portfolio
@@ -177,14 +178,19 @@
 						class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto"
 						onclick="handlePortfolioClick('design')">Design</button>
 					<button
-						class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:scale-95 m-auto hidden sm:block"
+						class="leading-normal hover:font-bold px-2 py-1 focus:text-white selection:ease-out active:font-extrabold m-auto hidden sm:block"
 						onclick="handlePortfolioClick('outros')">Outros</button>
 				</div>
-
+				<div id="NoPortfolioMessage" class="w-2/3 mx-auto hidden mt-10 animate__animated text-center">
+					<em class="text-center">Nenhum projeto encontrado. Quer ser o primeiro?</br> <a class="text-primary"
+							href="#FaleConosco">Fale com a
+							Agility</a></em>
+				</div>
 				<div
 					class="flex flex-wrap items-center gap-6 mt-16 w-full mx-auto justify-center grid grid-cols-1 md:grid-cols-2"
 					data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-once="true">
-					<div class="portfolio-item flex flex-col items-center p-3 cursor-pointer"
+
+					<div class="portfolio-item animate__animated flex flex-col items-center p-3 cursor-pointer"
 						data-portfolio-category="tecnologia,design">
 						<div class="bg-primary rounded-3xl text-center mb-4">
 							<img src=" ./assets/images/portfolio_1.png" alt="">
@@ -192,7 +198,7 @@
 						<p class="font-bold text-md w-3/4 mx-auto text-center">EasyToLive</p>
 						<div class="font-italic cursor-pointer text-center mx-auto">Aplicativo Web & Design</div>
 					</div>
-					<div class="portfolio-item flex flex-col items-center p-3 cursor-pointer"
+					<div class="portfolio-item animate__animated flex flex-col items-center p-3 cursor-pointer"
 						data-portfolio-category="tecnologia">
 						<div class="bg-primary rounded-3xl text-center mb-4">
 							<img src="./assets/images/portfolio_2.png" alt="">
@@ -201,7 +207,7 @@
 						<p class="font-bold text-md w-3/4 mx-auto text-center">Academia Cearense de Economia</p>
 						<div class="font-italic cursor-pointer text-center mx-auto">Site Corporativo</div>
 					</div>
-					<div class="portfolio-item flex flex-col items-center p-3 cursor-pointer"
+					<div class="portfolio-item animate__animated flex flex-col items-center p-3 cursor-pointer"
 						data-portfolio-category="tecnologia">
 						<div class="bg-primary rounded-3xl text-center mb-4">
 							<img src="./assets/images/portfolio_3.png" alt="">
@@ -210,7 +216,7 @@
 						<p class="font-bold text-md w-3/4 mx-auto text-center">Scrummy Poker</p>
 						<div class="font-italic cursor-pointer text-center mx-auto">Aplicativo Web</div>
 					</div>
-					<div class="portfolio-item flex flex-col items-center p-3 cursor-pointer"
+					<div class="portfolio-item animate__animated flex flex-col items-center p-3 cursor-pointer"
 						data-portfolio-category="tecnologia">
 						<div class="bg-primary rounded-3xl text-center mb-4">
 							<img src="./assets/images/portfolio_4.png" alt="">
@@ -219,7 +225,7 @@
 						<p class="font-bold text-md w-3/4 mx-auto text-center">Dynotest Performance Solutions</p>
 						<div class="font-italic cursor-pointer text-center mx-auto">Site Corporativo</div>
 					</div>
-					<!-- <div class="portfolio-item flex flex-col items-center p-3 cursor-pointer" data-portfolio-category="design">
+					<!-- <div class="portfolio-item animate__animated flex flex-col items-center p-3 cursor-pointer" data-portfolio-category="design">
 					<div class="bg-primary rounded-3xl text-center mb-4">
 						<img src="./assets/images/portfolio_1.png" alt="">
 
@@ -227,7 +233,7 @@
 					<p class="font-bold text-md w-3/4 mx-auto text-center mx-auto">Agility Creative</p>
 					<div class="font-italic cursor-pointer text-center">Marca</div>
 				</div>
-				<div class="portfolio-item flex flex-col items-center m-6 p-3 cursor-pointer" data-portfolio-category="outros">
+				<div class="portfolio-item animate__animated flex flex-col items-center m-6 p-3 cursor-pointer" data-portfolio-category="outros">
 					<div class="bg-primary rounded-3xl text-center mb-4">
 						<img src="./assets/images/portfolio_1.png" alt="">
 
@@ -285,7 +291,7 @@
 				</div>
 			</div>
 
-		
+
 
 			<!-- FEEDBACK -->
 			<!-- <div id="Feedback" class="flex flex-wrap 2xl:grid 2xl:grid-cols-2 justify-between gap-4 w-full" data-aos="fade-down"
