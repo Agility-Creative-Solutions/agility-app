@@ -59,10 +59,12 @@ function handlePortfolioClick(portfolioCategoryId) {
       setTimeout(() => {
         portfolioItem.classList.remove("animate__backOutLeft");
         portfolioItem.classList.add("animate__backInLeft");
+        portfolioItem.style.display = "flex";
       }, 300);
     } else {
       portfolioItem.classList.remove("animate__backInLeft");
       portfolioItem.classList.add("animate__backOutLeft");
+      portfolioItem.style.display = "none";
     }
 
     const emptyPortfolioMessage = document.getElementById("NoPortfolioMessage");
